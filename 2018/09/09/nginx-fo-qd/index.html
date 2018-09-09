@@ -31,14 +31,14 @@
 <meta property="og:site_name" content="叶落归根的博客">
 <meta property="og:description" content="Nginx，一名网红（网络服务器红人…），就算没有自传和回忆录，争着介绍它的花边新闻也该有吧。 针对其找到仅有的一两本书籍，也直接深入到“源码剖析”的阶段。写得并不十分满意，况且我还不需要这些。后来发现了原因，大概是因为“使用太简单了，都不值得出书”。是的，Nginx把纷繁复杂的功能，浓缩成一份简单的配置，极易上手。当它呈现到你面前时，感觉独具匠心。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx0.jpg?q-sign-algorithm=sha1&q-ak=AKIDfgRhdAS7n4I3K1kEMc2aeIY8Dr1xeoDu&q-sign-time=1536487911;1536489711&q-key-time=1536487911;1536489711&q-header-list=&q-url-param-list=&q-signature=57472d08bd17df747d38f499acd7e4c095a713a7&x-cos-security-token=04cef9e87d0ba40f9411bd95aab6a6e53e06a99510001&response-content-disposition=attachment">
-<meta property="og:image" content="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx1.jpg">
-<meta property="og:image" content="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx2.jpg">
-<meta property="og:updated_time" content="2018-09-09T10:37:57.729Z">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx0.jpg">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx1.jpg">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx2.jpg">
+<meta property="og:updated_time" content="2018-09-09T11:06:46.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx是个啥?">
 <meta name="twitter:description" content="Nginx，一名网红（网络服务器红人…），就算没有自传和回忆录，争着介绍它的花边新闻也该有吧。 针对其找到仅有的一两本书籍，也直接深入到“源码剖析”的阶段。写得并不十分满意，况且我还不需要这些。后来发现了原因，大概是因为“使用太简单了，都不值得出书”。是的，Nginx把纷繁复杂的功能，浓缩成一份简单的配置，极易上手。当它呈现到你面前时，感觉独具匠心。">
-<meta name="twitter:image" content="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx0.jpg?q-sign-algorithm=sha1&q-ak=AKIDfgRhdAS7n4I3K1kEMc2aeIY8Dr1xeoDu&q-sign-time=1536487911;1536489711&q-key-time=1536487911;1536489711&q-header-list=&q-url-param-list=&q-signature=57472d08bd17df747d38f499acd7e4c095a713a7&x-cos-security-token=04cef9e87d0ba40f9411bd95aab6a6e53e06a99510001&response-content-disposition=attachment">
+<meta name="twitter:image" content="https://fengzean.xyz/assets/blogImg/nginx0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="叶落归根的博客" type="application/atom+xml">
   
@@ -218,7 +218,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx0.jpg?q-sign-algorithm=sha1&amp;q-ak=AKIDfgRhdAS7n4I3K1kEMc2aeIY8Dr1xeoDu&amp;q-sign-time=1536487911;1536489711&amp;q-key-time=1536487911;1536489711&amp;q-header-list=&amp;q-url-param-list=&amp;q-signature=57472d08bd17df747d38f499acd7e4c095a713a7&amp;x-cos-security-token=04cef9e87d0ba40f9411bd95aab6a6e53e06a99510001&amp;response-content-disposition=attachment" alt=""></p>
+        <p><img src="/assets/blogImg/nginx0.jpg" alt=""></p>
 <p>Nginx，一名<strong>网红</strong>（网络服务器红人…），就算没有自传和回忆录，争着介绍它的花边新闻也该有吧。</p>
 <p>针对其找到仅有的一两本书籍，也直接深入到“源码剖析”的阶段。写得并不十分满意，况且我还不需要这些。<br>后来发现了原因，大概是因为<strong>“使用太简单了，都不值得出书”</strong>。<br>是的，Nginx把纷繁复杂的功能，浓缩成一份简单的配置，极易上手。<br>当它呈现到你面前时，感觉独具匠心。</p>
 <a id="more"></a>
@@ -239,7 +239,7 @@ var _hmt = _hmt || [];
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">set $env_id &quot;1.1.1.1&quot;;</span><br><span class="line">if ( $http_cookie ~* &quot;host_id=(\S+)(;.*|$)&quot;) &#123;</span><br><span class="line">    set $env_id $1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">location / &#123;</span><br><span class="line">    proxy_set_header Host $host;</span><br><span class="line">    proxy_pass   http://$env_id:80;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>那接下来的事情，就是<strong>怎样用最简便的方式，把IP种在cookie里？</strong><br>我们应用了nginx-http-footer-filter模块，html文件经过代理时，都注入了一小段js代码。</p>
-<p>这段代码，会帮我们展示小菜单，点击某个环境时，则将IP种到cookie里，同时刷新页面，让Nginx完成环境切换。<br><img src="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx1.jpg" alt=""></p>
+<p>这段代码，会帮我们展示小菜单，点击某个环境时，则将IP种到cookie里，同时刷新页面，让Nginx完成环境切换。<br><img src="/assets/blogImg/nginx1.jpg" alt=""></p>
 <p>切换环境，如今只需点击一次。</p>
 <h3 id="场景二：SourceMap"><a href="#场景二：SourceMap" class="headerlink" title="场景二：SourceMap"></a>场景二：SourceMap</h3><p>在线上环境调试Js代码是件麻烦的事情，因为目前合格的前端部署，代码都应经过压缩。性能问题是优化了，debug可不怎么方便。</p>
 <p>而SourceMap正好可以解决此问题。</p>
@@ -255,7 +255,7 @@ var _hmt = _hmt || [];
 </ol>
 <p>这样的模型，用<code>反向代理+内容纂改</code>的思路再合适不过。<br>每次构建编译时，我们会把sourceMap文件存放到一台机器（举例为1.1.1.1），命名为js文件名后加<code>.map</code>后缀。随后，使用Nginx，通过这几行配置就能把此功能实现：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.js$ &#123;</span><br><span class="line">    footer &quot;\n//# sourceMappingURL=$request_uri.map&quot;;</span><br><span class="line">    footer_types &quot;*&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>只要经过代理，在chrome里，我们能看到每份被压缩过的js文件，都有一个对应的源码文件。<br>你可以直接使用它来做打断点之类的操作，大大的提升了调试质量。<br><img src="https://frazer-1257522998.cos.ap-guangzhou.myqcloud.com/data/nginx2.jpg" alt=""></p>
+<p>只要经过代理，在chrome里，我们能看到每份被压缩过的js文件，都有一个对应的源码文件。<br>你可以直接使用它来做打断点之类的操作，大大的提升了调试质量。<br><img src="/assets/blogImg/nginx2.jpg" alt=""></p>
 <h3 id="场景三：内容纂改"><a href="#场景三：内容纂改" class="headerlink" title="场景三：内容纂改"></a>场景三：内容纂改</h3><p>其实在以上两个场景里，都涉及了“内容纂改”。<br>无论是说“纂改”还是“劫持”，大家的印象都不是什么好事情，但另一方面，他们又可以让事情有趣起来。</p>
 <p>统一介绍下，Nginx涉及纂改的模块有：</p>
 <ul>
