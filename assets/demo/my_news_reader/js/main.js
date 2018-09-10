@@ -1,4 +1,4 @@
-function H$(i){return document.getElementById(i);}
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>function H$(i){return document.getElementById(i);}
 function H$$(c,p){
 	if(p) return p.getElementsByTagName(c);
 	else return document.getElementsByTagName(c);
