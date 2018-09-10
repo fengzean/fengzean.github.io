@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx0.jpg">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx1.jpg">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/nginx2.jpg">
-<meta property="og:updated_time" content="2018-09-09T12:42:16.966Z">
+<meta property="og:updated_time" content="2018-09-10T17:19:31.464Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nginx是个啥?">
 <meta name="twitter:description" content="Nginx，一名网红（网络服务器红人…）。">
@@ -55,16 +55,6 @@
   
 
   
-<script>
-var _hmt = _hmt || [];
-(function() {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?a30844fa2bcbce0a9e001fe06cefeddf";
-	var s = document.getElementsByTagName("script")[0]; 
-	s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 
 </head>
 
@@ -218,7 +208,31 @@ var _hmt = _hmt || [];
       </header>
     
     <!-- 目录内容 -->
-           
+    <!--
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx与NodeJs"><span class="toc-number">1.</span> <span class="toc-text">Nginx与NodeJs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景一：环境切换"><span class="toc-number">2.</span> <span class="toc-text">场景一：环境切换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景二：SourceMap"><span class="toc-number">3.</span> <span class="toc-text">场景二：SourceMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景三：内容纂改"><span class="toc-number">4.</span> <span class="toc-text">场景三：内容纂改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景四：本地映射"><span class="toc-number">5.</span> <span class="toc-text">场景四：本地映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景五：移动侧调试"><span class="toc-number">6.</span> <span class="toc-text">场景五：移动侧调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#边角料"><span class="toc-number">7.</span> <span class="toc-text">边角料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后记"><span class="toc-number">8.</span> <span class="toc-text">后记</span></a></li></ol>
+         </div>
+   <script type="text/javascript">
+    function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+      -->       
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
@@ -425,8 +439,8 @@ var _hmt = _hmt || [];
     </a>
   
   
-    <a href="/2018/09/09/关于Google神牛Jeff Dean的笑话，非程序员勿入/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于Google神牛Jeff Dean的笑话，非程序员勿入</div>
+    <a href="/2018/09/08/Linux基础知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux基础知识</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -445,6 +459,19 @@ var _hmt = _hmt || [];
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx与NodeJs"><span class="toc-number">1.</span> <span class="toc-text">Nginx与NodeJs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景一：环境切换"><span class="toc-number">2.</span> <span class="toc-text">场景一：环境切换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景二：SourceMap"><span class="toc-number">3.</span> <span class="toc-text">场景二：SourceMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景三：内容纂改"><span class="toc-number">4.</span> <span class="toc-text">场景三：内容纂改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景四：本地映射"><span class="toc-number">5.</span> <span class="toc-text">场景四：本地映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景五：移动侧调试"><span class="toc-number">6.</span> <span class="toc-text">场景五：移动侧调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#边角料"><span class="toc-number">7.</span> <span class="toc-text">边角料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#后记"><span class="toc-number">8.</span> <span class="toc-text">后记</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>

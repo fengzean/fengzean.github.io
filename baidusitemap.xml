@@ -4,17 +4,53 @@
 
     
   <url>
-    <loc>https://fengzean.xyz/2018/09/09/1st/</loc>
-    <lastmod>2018-09-10T16:43:59.482Z</lastmod>
+    <loc>https://fengzean.xyz/2018/09/10/20180910-ARTS-week02/</loc>
+    <lastmod>2018-09-10T17:19:51.220Z</lastmod>
     <data>
         <display>
-        <title>Hello website!</title>
-        <pubTime>2018-09-09T13:58:00.000Z</pubTime>
+        <title>20180910_ARTS_week02</title>
+        <pubTime>2018-09-10T13:58:00.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="主题" url="https://fengzean.xyz/categories/%E4%B8%BB%E9%A2%98/"/>
+              <breadCrumb title="ARTS" url="https://fengzean.xyz/categories/ARTS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fengzean.xyz/2018/09/11/AI100/</loc>
+    <lastmod>2018-09-10T17:19:45.916Z</lastmod>
+    <data>
+        <display>
+        <title>AI100</title>
+        <pubTime>2018-09-10T17:19:45.916Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="AI" url="https://fengzean.xyz/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://fengzean.xyz/2018/09/11/arts_20180907_week1/</loc>
+    <lastmod>2018-09-10T17:19:41.676Z</lastmod>
+    <data>
+        <display>
+        <title>ARTS_week1</title>
+        <pubTime>2018-09-10T17:19:41.676Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="ARTS" url="https://fengzean.xyz/categories/ARTS/"/>
           
         </display>
     </data>
@@ -23,7 +59,7 @@
     
   <url>
     <loc>https://fengzean.xyz/2018/09/08/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2018-09-10T16:09:24.541Z</lastmod>
+    <lastmod>2018-09-10T17:19:37.572Z</lastmod>
     <data>
         <display>
         <title>Linux基础知识</title>
@@ -42,28 +78,9 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://fengzean.xyz/2018/09/10/20180910-ARTS-week02/</loc>
-    <lastmod>2018-09-10T08:42:03.234Z</lastmod>
-    <data>
-        <display>
-        <title>20180910_ARTS_week02</title>
-        <pubTime>2018-09-10T13:58:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="ARTS" url="https://fengzean.xyz/categories/ARTS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://fengzean.xyz/2018/09/09/nginx-fo-qd/</loc>
-    <lastmod>2018-09-09T12:42:16.966Z</lastmod>
+    <lastmod>2018-09-10T17:19:31.464Z</lastmod>
     <data>
         <display>
         <title>nginx是个啥?</title>
@@ -83,12 +100,12 @@
 
     
   <url>
-    <loc>https://fengzean.xyz/2018/09/09/%E5%85%B3%E4%BA%8EGoogle%E7%A5%9E%E7%89%9BJeff%20Dean%E7%9A%84%E7%AC%91%E8%AF%9D%EF%BC%8C%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8B%BF%E5%85%A5/</loc>
-    <lastmod>2018-09-09T07:22:13.919Z</lastmod>
+    <loc>https://fengzean.xyz/2018/09/11/%E5%85%B3%E4%BA%8EGoogle%E7%A5%9E%E7%89%9BJeff%20Dean%E7%9A%84%E7%AC%91%E8%AF%9D%EF%BC%8C%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8B%BF%E5%85%A5/</loc>
+    <lastmod>2018-09-10T17:19:25.500Z</lastmod>
     <data>
         <display>
         <title>关于Google神牛Jeff Dean的笑话，非程序员勿入</title>
-        <pubTime>2018-09-09T07:22:13.927Z</pubTime>
+        <pubTime>2018-09-10T17:19:25.500Z</pubTime>
         
          
            
@@ -101,40 +118,23 @@
 
     
   <url>
-    <loc>https://fengzean.xyz/2018/09/09/arts_20180907_week1/</loc>
-    <lastmod>2018-09-09T07:21:51.058Z</lastmod>
+    <loc>https://fengzean.xyz/2018/09/09/1st/</loc>
+    <lastmod>2018-09-10T17:10:35.846Z</lastmod>
     <data>
         <display>
-        <title>ARTS_week1</title>
-        <pubTime>2018-09-09T07:21:51.058Z</pubTime>
+        <title>Hello website!</title>
+        <pubTime>2018-09-09T13:58:00.000Z</pubTime>
         
          
            
              
-              <breadCrumb title="ARTS" url="https://fengzean.xyz/categories/ARTS/"/>
+              <breadCrumb title="主题" url="https://fengzean.xyz/categories/%E4%B8%BB%E9%A2%98/"/>
           
         </display>
     </data>
     </url>
 
     
-  <url>
-    <loc>https://fengzean.xyz/2018/09/09/AI100/</loc>
-    <lastmod>2018-09-09T07:21:34.994Z</lastmod>
-    <data>
-        <display>
-        <title>AI100</title>
-        <pubTime>2018-09-09T07:21:35.002Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="AI" url="https://fengzean.xyz/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
     
