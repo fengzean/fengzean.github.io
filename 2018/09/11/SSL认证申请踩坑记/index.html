@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://fengzean.xyz">
-  <title>Category: Linux | e^iπ+1=0</title>
+  <title>SSL/TLS认证申请踩坑记 | e^iπ+1=0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
       <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,17 +23,24 @@
             border-left-color: #6d6d6d;    /*左边框颜色*/
         }
       </style>
-  <meta name="description" content="学习总结 思考感悟 知识管理">
+  <meta name="description" content="1.SSL/TLS证书简介（摘自维基百科） 传输层安全性协议（英语：Transport Layer Security，缩写作 TLS），及其前身安全套接层（Secure Sockets Layer，缩写作 SSL）是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SS">
 <meta name="keywords" content="c,cpp,python,Golang,ML,DL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="e^iπ+1=0">
-<meta property="og:url" content="https://fengzean.xyz/categories/Linux/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSL&#x2F;TLS认证申请踩坑记">
+<meta property="og:url" content="https://fengzean.xyz/2018/09/11/SSL认证申请踩坑记/index.html">
 <meta property="og:site_name" content="e^iπ+1=0">
-<meta property="og:description" content="学习总结 思考感悟 知识管理">
+<meta property="og:description" content="1.SSL/TLS证书简介（摘自维基百科） 传输层安全性协议（英语：Transport Layer Security，缩写作 TLS），及其前身安全套接层（Secure Sockets Layer，缩写作 SSL）是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SS">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/scure.jpg">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/PUA.png">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/DNS解析.png">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/SSL.png">
+<meta property="og:image" content="https://fengzean.xyz/assets/blogImg/httpsBAidu.png">
+<meta property="og:updated_time" content="2018-09-11T15:08:56.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="e^iπ+1=0">
-<meta name="twitter:description" content="学习总结 思考感悟 知识管理">
+<meta name="twitter:title" content="SSL&#x2F;TLS认证申请踩坑记">
+<meta name="twitter:description" content="1.SSL/TLS证书简介（摘自维基百科） 传输层安全性协议（英语：Transport Layer Security，缩写作 TLS），及其前身安全套接层（Secure Sockets Layer，缩写作 SSL）是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SS">
+<meta name="twitter:image" content="https://fengzean.xyz/assets/blogImg/scure.jpg">
   
     <link rel="alternative" href="/atom.xml" title="e^iπ+1=0" type="application/atom+xml">
   
@@ -179,64 +186,266 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-SSL认证申请踩坑记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/08/Linux基础知识/" class="archive-article-date">
-  	<time datetime="2018-09-08T04:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/08/Linux基础知识/">Linux基础知识</a>
+    <h1 class="article-title" itemprop="name">
+      SSL/TLS认证申请踩坑记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2018/09/11/SSL认证申请踩坑记/" class="archive-article-date">
+  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
+</a>
+        
+             <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+        </span> 
+        
+        
+      </header>
+    
+    <!-- 目录内容 -->
+    <!--
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-SSL-TLS证书简介（摘自维基百科）"><span class="toc-number">1.</span> <span class="toc-text">1.SSL/TLS证书简介（摘自维基百科）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-遇到的问题"><span class="toc-number">2.</span> <span class="toc-text">2.遇到的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-分析原因"><span class="toc-number">3.</span> <span class="toc-text">3.分析原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-解决方法"><span class="toc-number">4.</span> <span class="toc-text">4.解决方法</span></a></li></ol>
+         </div>
+   <script type="text/javascript">
+    function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+       -->      
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22789069&auto=0&height=66"></iframe>
+
+<h3 id="1-SSL-TLS证书简介（摘自维基百科）"><a href="#1-SSL-TLS证书简介（摘自维基百科）" class="headerlink" title="1.SSL/TLS证书简介（摘自维基百科）"></a>1.SSL/TLS证书简介（摘自维基百科）</h3><p><img src="/assets/blogImg/scure.jpg" alt=""></p>
+<p><strong>传输层安全性协议</strong>（英语：Transport Layer Security，<a href="https://zh.wikipedia.org/wiki/%E7%B8%AE%E5%AF%AB" target="_blank" rel="noopener">缩写</a>作 <strong>TLS</strong>），及其前身<strong>安全套接层</strong>（Secure Sockets Layer，缩写作 <strong>SSL</strong>）是一种<a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">安全协议</a>，目的是为<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF" target="_blank" rel="noopener">互联网</a>通信，提供安全及数据<a href="https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E6%80%A7" target="_blank" rel="noopener">完整性</a>保障。<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF" target="_blank" rel="noopener">网景</a>公司（Netscape）在1994年推出首版<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">网页浏览器</a>，<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF%E9%A0%98%E8%88%AA%E5%93%A1" target="_blank" rel="noopener">网景导航者</a>时，推出<a href="https://zh.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a>协议，以SSL进行加密，这是SSL的起源。<a href="https://zh.wikipedia.org/wiki/IETF" target="_blank" rel="noopener">IETF</a>将SSL进行标准化，1999年公布第一版TLS标准文件。随后又公布RFC 5246 （2008年8月）与 <a href="https://tools.ietf.org/html/rfc6176" target="_blank" rel="noopener">RFC 6176</a> （2011年3月）。在<a href="https://zh.wikipedia.org/wiki/%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">浏览器</a>、<a href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6" target="_blank" rel="noopener">电子邮件</a>、<a href="https://zh.wikipedia.org/wiki/%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A" target="_blank" rel="noopener">即时通信</a>、<a href="https://zh.wikipedia.org/wiki/VoIP" target="_blank" rel="noopener">VoIP</a>、<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E7%B5%A1%E5%82%B3%E7%9C%9F" target="_blank" rel="noopener">网络传真</a>等应用程序中，广泛支持这个协议。主要的网站，如<a href="https://zh.wikipedia.org/wiki/Google" target="_blank" rel="noopener">Google</a>、<a href="https://zh.wikipedia.org/wiki/Facebook" target="_blank" rel="noopener">Facebook</a>等也以这个协议来创建安全连线，发送数据。目前已成为<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91" target="_blank" rel="noopener">互联网</a>上保密通信的工业标准。</p>
+<a id="more"></a>
+<p>SSL包含记录层（Record Layer）和传输层，记录层协议确定传输层数据的封装格式。传输层安全协议使用<a href="https://zh.wikipedia.org/wiki/X.509" target="_blank" rel="noopener">X.509</a>认证，之后利用非对称加密演算来对通信方做身份认证，之后交换对称密钥作为会谈密钥（<a href="https://zh.wikipedia.org/wiki/Session_key" target="_blank" rel="noopener">Session key</a>）。这个会谈密钥是用来将通信两方交换的数据做加密，保证两个应用间通信的保密性和可靠性，使客户与服务器应用之间的通信不被攻击者窃听。</p>
+<h3 id="2-遇到的问题"><a href="#2-遇到的问题" class="headerlink" title="2.遇到的问题"></a>2.遇到的问题</h3><p>由于网页代码托管平台的关系（国内托管于coding，国外托管于github），在github上先完成托管，因此 DNS 的 CNAME 记录先设置为将域名解析到github.io，同时域名启用https解析（github不支持SSL证书上传），步骤和详情<a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/" target="_blank" rel="noopener">请戳</a>，coding托管是后来完成的，此时也想让coding的静态 Pages 应用启用https协议，同时申请SSL/TLS 安全证书，这是问题出现了，SSL证书死活申请不成功，主要是半小时才能申请一次，其实也有技巧，报错信息为：</p>
+<blockquote>
+<p>urn:acme:error:unauthorized:Invalid response from <a href="http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" target="_blank" rel="noopener">http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a>: xxxxxxxxx</p>
+</blockquote>
+<p>，同时在<a href="https://ziyuan.baidu.com/?castk=LTE%3D" target="_blank" rel="noopener">百度长站</a>提交的htpps认证也不成功，抓取诊断（抓取UA分别为PC和移动）均处出现抓取失败，如下：</p>
+<p><img src="/assets/blogImg/PUA.png" alt=""></p>
+<p>出现了拒绝访问的情形。</p>
+<h3 id="3-分析原因"><a href="#3-分析原因" class="headerlink" title="3.分析原因"></a>3.分析原因</h3><p>根据上面错误的情形，google了一下，发现了Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html" target="_blank" rel="noopener">Coding Pages 常见问题</a></p>
+<p>这时候按照官方文件的指引，找到了和我一样的错误信息的解决方案：</p>
+<blockquote>
+<p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 pages.coding.me，动态 Pages 为 pages.coding.io<br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p>
+</blockquote>
+<p>由于Coding Pages的静态Pages是免费的，于是解决方式1对我来说就不存在了，接着联想到之前我对部署在GitHub Pages上的个人站点进行了自定义域名绑定+域名解析设置，有些豁然开朗的感觉。由于我的个人站点是同时部署到GitHub 和Coding 上，接着在腾讯域名解析里进行了配置：国内的解析线路将我的域名指向<code>pages.coding.me</code>，默认的解析路线则是指向了<code>lewky.github.io</code>。</p>
+<p>之所以这样配置，是因为国内部分地区无法直接访问GitHub（百度的spider也无法爬取github的内容，然而google就厉害得多了），自然就无法访问我托管在GitHub上的网页代码，于是我又选择了Codingt的静态Pages服务，这样国内用户就可以快速访问到我托管在Coding 的网页代码，而国外用户则是快速访问到github上的网页代码。</p>
+<p>问题就出现在这里，因为在申请coding的请SSL/TLS证书之前，已有对github的国外解析路线，同时申请时候直接解析了国外线路，导致在Coding 的后台在申请证书时无法通过验证，自然就申请失败了。</p>
+<p>因此解决该问题应该用上述的解决方式2。</p>
+<h3 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4.解决方法"></a>4.解决方法</h3><p><img src="/assets/blogImg/DNS解析.png" alt=""></p>
+<p>登陆到阿里云域名解析的后台系统，打开个人域名的解析设置，暂停对于上图红框内所有线路的解析，然后大概需要10分钟左右的生效时间，毕竟DNS解析是存在缓存的。10分钟后进入Coding 静态 Pages 应用服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后申请证书成功。</p>
+<p><img src="/assets/blogImg/SSL.png" alt=""></p>
+<p>最后，再次返回腾讯云域名解析的后台，将红框内的线路再次启用，顺利解决。此时去申请百度长站的https认证也成功了，抓取数据也ok了。</p>
+<p><img src="/assets/blogImg/httpsBAidu.png" alt=""></p>
+<p>总结：先关掉国外的线路解析，然后申请SSL证书，成功后再启用之前关掉的线路。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux/主题//" class="article-tag-list-link color3">主题</a>
+        			<a href="/categories/hexo-https//" class="article-tag-list-link color3">hexo - https</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://fengzean.xyz/2018/09/11/SSL认证申请踩坑记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/09/11/关于Google神牛Jeff Dean的笑话，非程序员勿入/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于Google神牛Jeff Dean的笑话，非程序员勿入</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-SSL-TLS证书简介（摘自维基百科）"><span class="toc-number">1.</span> <span class="toc-text">1.SSL/TLS证书简介（摘自维基百科）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-遇到的问题"><span class="toc-number">2.</span> <span class="toc-text">2.遇到的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-分析原因"><span class="toc-number">3.</span> <span class="toc-text">3.分析原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-解决方法"><span class="toc-number">4.</span> <span class="toc-text">4.解决方法</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'Tue Sep 11 2018 21:30:00 GMT+0800',
+  owner: 'fengzean',
+  repo: 'fengzean.github.io',
+  oauth: {
+    client_id: '2d1de0fced863a0e251b',
+    client_secret: 'ac0b3632126b075480dc4ac0001a11c7c8b799ed',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+
+  
 
 
           </div>
@@ -268,10 +477,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
