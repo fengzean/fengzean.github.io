@@ -105,13 +105,15 @@
     <link href="https://fengzean.xyz/2018/09/09/1st/"/>
     <id>https://fengzean.xyz/2018/09/09/1st/</id>
     <published>2018-09-09T13:58:00.000Z</published>
-    <updated>2018-09-11T01:38:30.846Z</updated>
+    <updated>2018-09-11T02:04:28.515Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在微博大V的推荐和耗子叔的读书会的帮助下,个人博客网站终于建立起来了.</p><p>先看一下大体的预览图</p><p><img src="/assets/blogImg/pro.png" alt=""></p><a id="more"></a><h3 id="1-搭建个人博客网站的初衷"><a href="#1-搭建个人博客网站的初衷" class="headerlink" title="1 搭建个人博客网站的初衷"></a>1 搭建个人博客网站的初衷</h3><p>之前一直在csdn和博客园分享东西,但由于没有版权保护(百度的spider可以随便爬取),更可恨的是文章后期添油加醋太厉害了,完全违背作者的本意;</p><h3 id="2-博客的搭建过程"><a href="#2-博客的搭建过程" class="headerlink" title="2 博客的搭建过程"></a>2 博客的搭建过程</h3><p>按照B/S构建,后端搭建主要是服务器租用和域名注册解析,使之具有发布博客的能力,前端简单了,按照需要显示的模块直接定制功能.</p><h3 id="3-说明"><a href="#3-说明" class="headerlink" title="3 说明"></a>3 说明</h3><p>本人穷学生一枚,租用了腾讯云的服务器和域名解析,相对来讲比价便宜,腾讯云上也直接有限量的对象存储(COS),能用于直接存储图片啥的.</p><p><img src="/assets/blogImg/cloud.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><div style="position:absolute; bottom:120px left:auto; width:85%"><br>    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="260" height="86" src="//music.163.com/outchain/player?type=2&id=1695651&auto=1&height=66"><br>                     </iframe><br>                   </div>   <p>在微博大V的推荐和耗子叔的读书会的帮助下,个人博客网站终于建立起来了.</p><p>先看一下大体的预览图</p><p><img src="/assets/blogImg/pro.png" alt=""></p><a id="more"></a><h3 id="1-搭建个人博客网站的初衷"><a href="#1-搭建个人博客网站的初衷" class="headerlink" title="1 搭建个人博客网站的初衷"></a>1 搭建个人博客网站的初衷</h3><p>之前一直在csdn和博客园分享东西,但由于没有版权保护(百度的spider可以随便爬取),更可恨的是文章后期添油加醋太厉害了,完全违背作者的本意;</p><h3 id="2-博客的搭建过程"><a href="#2-博客的搭建过程" class="headerlink" title="2 博客的搭建过程"></a>2 博客的搭建过程</h3><p>按照B/S构建,后端搭建主要是服务器租用和域名注册解析,使之具有发布博客的能力,前端简单了,按照需要显示的模块直接定制功能.</p><h3 id="3-说明"><a href="#3-说明" class="headerlink" title="3 说明"></a>3 说明</h3><p>本人穷学生一枚,租用了腾讯云的服务器和域名解析,相对来讲比价便宜,腾讯云上也直接有限量的对象存储(COS),能用于直接存储图片啥的.</p><p><img src="/assets/blogImg/cloud.png" alt=""></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;在微博大V的推荐和耗子叔的读书会的帮助下,个人博客网站终于建立起来了.&lt;/p&gt;
+      &lt;div style=&quot;position:absolute; bottom:120px left:auto; width:85%&quot;&gt;&lt;br&gt;    &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;260&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=1695651&amp;auto=1&amp;height=66&quot;&gt;&lt;br&gt;                     &lt;/iframe&gt;&lt;br&gt;                   &lt;/div&gt;   
+
+&lt;p&gt;在微博大V的推荐和耗子叔的读书会的帮助下,个人博客网站终于建立起来了.&lt;/p&gt;
 &lt;p&gt;先看一下大体的预览图&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/blogImg/pro.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
