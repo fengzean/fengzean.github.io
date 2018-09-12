@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/DNS解析.png">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/SSL.png">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/httpsBAidu.png">
-<meta property="og:updated_time" content="2018-09-12T01:38:11.708Z">
+<meta property="og:updated_time" content="2018-09-12T01:55:08.001Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSL&#x2F;TLS认证申请踩坑记">
 <meta name="twitter:description" content="1.SSL/TLS证书简介（摘自维基百科） 传输层安全性协议（英语：Transport Layer Security，缩写作 TLS），及其前身安全套接层（Secure Sockets Layer，缩写作 SSL）是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SS">
@@ -255,7 +255,7 @@
 <h3 id="3-分析原因"><a href="#3-分析原因" class="headerlink" title="3.分析原因"></a>3.分析原因</h3><p>根据上面错误的情形，google了一下，发现了Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html" target="_blank" rel="noopener">Coding Pages 常见问题</a></p>
 <p>这时候按照官方文件的指引，找到了和我一样的错误信息的解决方案：</p>
 <blockquote>
-<p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 <code>pages.coding.me</code>，动态 Pages 为 pages.coding.io<br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p>
+<p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 <code>pages.coding.me</code>，动态 Pages 为 <code>pages.coding.io</code><br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p>
 </blockquote>
 <p>由于Coding Pages的静态Pages是免费的，于是解决方式1对我来说就不存在了，接着联想到之前我对部署在GitHub Pages上的个人站点进行了自定义域名绑定+域名解析设置，有些豁然开朗的感觉。由于我的个人站点是同时部署到GitHub 和Coding 上，接着在腾讯域名解析里进行了配置：国内的解析线路将我的域名指向<code>coding.me</code>，默认的解析路线则是指向了<code>github.io</code>。</p>
 <p>之所以这样配置，是因为国内部分地区无法直接访问GitHub（百度的spider也无法爬取github的内容，然而google就厉害得多了），自然就无法访问我托管在GitHub上的网页代码，于是我又选择了Codingt的静态Pages服务，这样国内用户就可以快速访问到我托管在Coding 的网页代码，而国外用户则是快速访问到github上的网页代码。</p>
