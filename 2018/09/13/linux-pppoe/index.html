@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://fengzean.xyz">
-  <title>Archives | e^iπ+1=0</title>
+  <title>ubuntu下PPPOE拨号上网方法 | e^iπ+1=0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
       <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,17 +23,25 @@
             border-left-color: #6d6d6d;    /*左边框颜色*/
         }
       </style>
-  <meta name="description" content="学习总结 思考感悟 知识管理">
+  <meta name="description" content="1.拨号上网提到拨号上网,小伙伴们估计都熟悉的不得了,毕竟都是互联网刚诞生时候的作品.  IPv6 PPPoE接入 – 路由型RG：DHCPv6 PD  2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)2.1.安装pppoecof打开终端，输入命令 sudo apt-get install pppoeconf,提示输入密码,输入即可.  2.2.配置连接打开终端，输入命令pppoec">
 <meta name="keywords" content="c,cpp,python,Golang,ML,DL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="e^iπ+1=0">
-<meta property="og:url" content="https://fengzean.xyz/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu下PPPOE拨号上网方法">
+<meta property="og:url" content="https://fengzean.xyz/2018/09/13/linux-pppoe/index.html">
 <meta property="og:site_name" content="e^iπ+1=0">
-<meta property="og:description" content="学习总结 思考感悟 知识管理">
+<meta property="og:description" content="1.拨号上网提到拨号上网,小伙伴们估计都熟悉的不得了,毕竟都是互联网刚诞生时候的作品.  IPv6 PPPoE接入 – 路由型RG：DHCPv6 PD  2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)2.1.安装pppoecof打开终端，输入命令 sudo apt-get install pppoeconf,提示输入密码,输入即可.  2.2.配置连接打开终端，输入命令pppoec">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/IPV6.jpg">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/install.png">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/username.png">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/load.png">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/log.png">
+<meta property="og:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/lcp.png">
+<meta property="og:updated_time" content="2018-09-12T16:44:38.287Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="e^iπ+1=0">
-<meta name="twitter:description" content="学习总结 思考感悟 知识管理">
+<meta name="twitter:title" content="ubuntu下PPPOE拨号上网方法">
+<meta name="twitter:description" content="1.拨号上网提到拨号上网,小伙伴们估计都熟悉的不得了,毕竟都是互联网刚诞生时候的作品.  IPv6 PPPoE接入 – 路由型RG：DHCPv6 PD  2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)2.1.安装pppoecof打开终端，输入命令 sudo apt-get install pppoeconf,提示输入密码,输入即可.  2.2.配置连接打开终端，输入命令pppoec">
+<meta name="twitter:image" content="https://fengzean.xyz/home/frazer/blog/source/assets/blogImg/IPV6.jpg">
   
     <link rel="alternative" href="/atom.xml" title="e^iπ+1=0" type="application/atom+xml">
   
@@ -180,37 +188,117 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-linux-pppoe" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/13/linux-pppoe/" class="archive-article-date">
-  	<time datetime="2018-09-12T17:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/13/linux-pppoe/">ubuntu下PPPOE拨号上网方法</a>
+    <h1 class="article-title" itemprop="name">
+      ubuntu下PPPOE拨号上网方法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2018/09/13/linux-pppoe/" class="archive-article-date">
+  	<time datetime="2018-09-12T17:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-13</time>
+</a>
+        
+             <span class="archive-article-date">
+            阅读量 <span id="busuanzi_value_page_pv"></span>
+        </span> 
+        
+        
+      </header>
+    
+    <!-- 目录内容 -->
+    <!--
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+    <div id="toc-article" class="toc-article">
+        <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+        <strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-拨号上网"><span class="toc-number">1.</span> <span class="toc-text">1.拨号上网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Ubuntu下PPPOE拨号上网的步骤-命令行的方式"><span class="toc-number">2.</span> <span class="toc-text">2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-安装pppoecof"><span class="toc-number">2.1.</span> <span class="toc-text">2.1.安装pppoecof</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-配置连接"><span class="toc-number">2.2.</span> <span class="toc-text">2.2.配置连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-断网命令"><span class="toc-number">2.3.</span> <span class="toc-text">2.3.断网命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-查看日志"><span class="toc-number">2.4.</span> <span class="toc-text">2.4.查看日志</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5查看接口信息"><span class="toc-number">2.5.</span> <span class="toc-text">2.5查看接口信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-（可能的）频繁断网问题解决方法"><span class="toc-number">2.6.</span> <span class="toc-text">2.6.（可能的）频繁断网问题解决方法</span></a></li></ol></li></ol>
+         </div>
+   <script type="text/javascript">
+    function showToc(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:block");
+        show_toc_btn.setAttribute("style","display:none");
+        };
+    function showBtn(){
+        var toc_article = document.getElementById("toc-article");
+        var show_toc_btn = document.getElementById("show-toc-btn");
+        toc_article.setAttribute("style","display:none");
+        show_toc_btn.setAttribute("style","display:block");
+        };
+   </script>
+       -->      
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=27725294&auto=0&height=32"></iframe></center>
+
+<h3 id="1-拨号上网"><a href="#1-拨号上网" class="headerlink" title="1.拨号上网"></a>1.拨号上网</h3><p>提到拨号上网,小伙伴们估计都熟悉的不得了,毕竟都是互联网刚诞生时候的作品.</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/IPV6.jpg" alt=""></p>
+<center>IPv6 PPPoE接入 – 路由型RG：DHCPv6 PD</center>
+
+<h3 id="2-Ubuntu下PPPOE拨号上网的步骤-命令行的方式"><a href="#2-Ubuntu下PPPOE拨号上网的步骤-命令行的方式" class="headerlink" title="2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)"></a>2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)</h3><h4 id="2-1-安装pppoecof"><a href="#2-1-安装pppoecof" class="headerlink" title="2.1.安装pppoecof"></a>2.1.安装pppoecof</h4><p>打开终端，输入命令 sudo apt-get install pppoeconf,提示输入密码,输入即可.</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/install.png" alt=""></p>
+<h4 id="2-2-配置连接"><a href="#2-2-配置连接" class="headerlink" title="2.2.配置连接"></a>2.2.配置连接</h4><p>打开终端，输入命令pppoeconf,然后一路回车(enter),直到遇到如下界面:</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/username.png" alt=""></p>
+<p>删除username,先输入运营商给的账号,然后在输入密码,继续一路回车,直到看到:</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/load.png" alt=""></p>
+<p>即表示连接成功.</p>
+<h4 id="2-3-断网命令"><a href="#2-3-断网命令" class="headerlink" title="2.3.断网命令"></a>2.3.断网命令</h4><p>打开终端，输入命令sudo poff.</p>
+<h4 id="2-4-查看日志"><a href="#2-4-查看日志" class="headerlink" title="2.4.查看日志"></a>2.4.查看日志</h4><p>打开终端，输入命令plog.</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/log.png" alt=""></p>
+<h4 id="2-5查看接口信息"><a href="#2-5查看接口信息" class="headerlink" title="2.5查看接口信息"></a>2.5查看接口信息</h4><p>打开终端，输入命令ifconfig ppp0.</p>
+<h4 id="2-6-（可能的）频繁断网问题解决方法"><a href="#2-6-（可能的）频繁断网问题解决方法" class="headerlink" title="2.6.（可能的）频繁断网问题解决方法"></a>2.6.（可能的）频繁断网问题解决方法</h4><p>打开终端，输入命令sudo gedit /etc/ppp/peers/dsl-provider,将下图中的lcp-echo-failure改大一点,默认为4,即表示30秒内连接4次失败就断网,本文改成了40.</p>
+<p><img src="/home/frazer/blog/source/assets/blogImg/lcp.png" alt=""></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -223,337 +311,134 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://fengzean.xyz/2018/09/13/linux-pppoe/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/11/SSL认证申请踩坑记/" class="archive-article-date">
-  	<time datetime="2018-09-11T13:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/11/SSL认证申请踩坑记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SSL/TLS认证申请踩坑记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/11/SSL认证申请踩坑记/">SSL/TLS认证申请踩坑记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/tcp-ip//" class="article-tag-list-link color2">tcp/ip</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/tcp-ip/https//" class="article-tag-list-link color1">https</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-拨号上网"><span class="toc-number">1.</span> <span class="toc-text">1.拨号上网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Ubuntu下PPPOE拨号上网的步骤-命令行的方式"><span class="toc-number">2.</span> <span class="toc-text">2.Ubuntu下PPPOE拨号上网的步骤(命令行的方式)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-安装pppoecof"><span class="toc-number">2.1.</span> <span class="toc-text">2.1.安装pppoecof</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-配置连接"><span class="toc-number">2.2.</span> <span class="toc-text">2.2.配置连接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-断网命令"><span class="toc-number">2.3.</span> <span class="toc-text">2.3.断网命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-查看日志"><span class="toc-number">2.4.</span> <span class="toc-text">2.4.查看日志</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5查看接口信息"><span class="toc-number">2.5.</span> <span class="toc-text">2.5查看接口信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-6-（可能的）频繁断网问题解决方法"><span class="toc-number">2.6.</span> <span class="toc-text">2.6.（可能的）频繁断网问题解决方法</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/11/关于Google神牛Jeff Dean的笑话，非程序员勿入/" class="archive-article-date">
-  	<time datetime="2018-09-11T03:21:04.054Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/11/关于Google神牛Jeff Dean的笑话，非程序员勿入/">关于Google神牛Jeff Dean的笑话，非程序员勿入</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/AI//" class="article-tag-list-link color3">AI</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/AI/google//" class="article-tag-list-link color2">google</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/11/AI100/" class="archive-article-date">
-  	<time datetime="2018-09-10T17:19:45.916Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/11/AI100/">AI100</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/AI//" class="article-tag-list-link color3">AI</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/11/arts_20180907_week1/" class="archive-article-date">
-  	<time datetime="2018-09-10T17:19:41.676Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/11/arts_20180907_week1/">ARTS_week1</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/ARTS//" class="article-tag-list-link color5">ARTS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/20180910-ARTS-week02/" class="archive-article-date">
-  	<time datetime="2018-09-10T13:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/20180910-ARTS-week02/">20180910_ARTS_week02</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/ARTS//" class="article-tag-list-link color5">ARTS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/09/1st/" class="archive-article-date">
-  	<time datetime="2018-09-09T13:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/09/1st/">Hello website!</a>
-    </h1>
-  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'Thu Sep 13 2018 01:30:00 GMT+0800',
+  owner: 'fengzean',
+  repo: 'fengzean.github.io',
+  oauth: {
+    client_id: '2d1de0fced863a0e251b',
+    client_secret: 'ac0b3632126b075480dc4ac0001a11c7c8b799ed',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/主题//" class="article-tag-list-link color3">主题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/09/nginx-fo-qd/" class="archive-article-date">
-  	<time datetime="2018-09-09T10:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/09/nginx-fo-qd/">nginx是个啥?</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/JS//" class="article-tag-list-link color3">JS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/08/Linux基础知识/" class="archive-article-date">
-  	<time datetime="2018-09-08T04:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/08/Linux基础知识/">Linux基础知识</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux/主题//" class="article-tag-list-link color3">主题</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -586,8 +471,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
