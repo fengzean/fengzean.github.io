@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fengzean.xyz/2018/09/13/test-bilibili/</loc>
+    
+    <lastmod>2018-09-13T14:20:41.813Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://fengzean.xyz//404.html</loc>
     
     <lastmod>2018-09-12T17:46:01.205Z</lastmod>
@@ -100,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://fengzean.xyz/assets/demo/jiugongge_demo2.html</loc>
+    <loc>https://fengzean.xyz/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2018-09-06T16:11:59.037Z</lastmod>
     
@@ -114,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://fengzean.xyz/assets/demo/my_news_reader/index.html</loc>
-    
-    <lastmod>2018-09-06T16:11:59.037Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://fengzean.xyz/assets/demo/mediator/demo.html</loc>
     
     <lastmod>2018-09-06T16:11:59.037Z</lastmod>
@@ -128,9 +128,9 @@
   </url>
   
   <url>
-    <loc>https://fengzean.xyz/assets/demo/hack_demo.html</loc>
+    <loc>https://fengzean.xyz/assets/demo/jiugongge_demo2.html</loc>
     
-    <lastmod>2018-09-06T16:11:59.033Z</lastmod>
+    <lastmod>2018-09-06T16:11:59.037Z</lastmod>
     
   </url>
   
@@ -142,14 +142,21 @@
   </url>
   
   <url>
-    <loc>https://fengzean.xyz/assets/demo/coffee_pc_demo/pro-con.html</loc>
+    <loc>https://fengzean.xyz/assets/demo/hack_demo.html</loc>
+    
+    <lastmod>2018-09-06T16:11:59.033Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fengzean.xyz/assets/demo/border1px.html</loc>
     
     <lastmod>2018-09-06T16:11:59.029Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://fengzean.xyz/assets/demo/border1px.html</loc>
+    <loc>https://fengzean.xyz/assets/demo/coffee_pc_demo/pro-con.html</loc>
     
     <lastmod>2018-09-06T16:11:59.029Z</lastmod>
     
