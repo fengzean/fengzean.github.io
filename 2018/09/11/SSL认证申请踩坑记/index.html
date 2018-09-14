@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/DNS解析.png">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/SSL.png">
 <meta property="og:image" content="https://fengzean.xyz/assets/blogImg/httpsBAidu.png">
-<meta property="og:updated_time" content="2018-09-12T01:55:08.001Z">
+<meta property="og:updated_time" content="2018-09-14T15:31:59.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSL&#x2F;TLS认证申请踩坑记">
 <meta name="twitter:description" content="1.SSL/TLS证书简介（摘自维基百科） 传输层安全性协议（英语：Transport Layer Security，缩写作 TLS），及其前身安全套接层（Secure Sockets Layer，缩写作 SSL）是一种安全协议，目的是为互联网通信，提供安全及数据完整性保障。网景公司（Netscape）在1994年推出首版网页浏览器，网景导航者时，推出HTTPS协议，以SSL进行加密，这是SS">
@@ -262,7 +262,7 @@
 <p>问题就出现在这里，因为在申请coding的请SSL/TLS证书之前，已有对github的国外解析路线，同时申请时候直接解析了国外线路，导致在Coding 的后台在申请证书时无法通过验证，自然就申请失败了。</p>
 <p>因此解决该问题应该用上述的解决方式2。</p>
 <h3 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4.解决方法"></a>4.解决方法</h3><p><img src="/assets/blogImg/DNS解析.png" alt=""></p>
-<p>登陆到阿里云域名解析的后台系统，打开个人域名的解析设置，暂停对于上图红框内所有线路的解析，然后大概需要10分钟左右的生效时间，毕竟DNS解析是存在缓存的。10分钟后进入Coding 静态 Pages 应用服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后申请证书成功。</p>
+<p>登陆到腾讯云域名解析的后台系统，打开个人域名的解析设置，暂停对于上图红框内所有线路的解析，然后大概需要10分钟左右的生效时间，毕竟DNS解析是存在缓存的。10分钟后进入Coding 静态 Pages 应用服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后申请证书成功。</p>
 <p><img src="/assets/blogImg/SSL.png" alt=""></p>
 <p>最后，再次返回腾讯云域名解析的后台，将红框内的线路再次启用，顺利解决。此时去申请百度长站的https认证也成功了，抓取数据也ok了。</p>
 <p><img src="/assets/blogImg/httpsBAidu.png" alt=""></p>
