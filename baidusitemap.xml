@@ -4,8 +4,26 @@
 
     
   <url>
+    <loc>https://fengzean.xyz/2018/09/07/%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B/</loc>
+    <lastmod>2018-09-15T05:43:06.651Z</lastmod>
+    <data>
+        <display>
+        <title>图像边缘检测</title>
+        <pubTime>2018-09-07T13:58:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="图像处理" url="https://fengzean.xyz/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://fengzean.xyz/2018/09/07/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-09-15T05:29:46.860Z</lastmod>
+    <lastmod>2018-09-15T05:35:49.196Z</lastmod>
     <data>
         <display>
         <title>机器学习常见算法总结</title>
@@ -14,7 +32,7 @@
          
            
              
-              <breadCrumb title="主题" url="https://fengzean.xyz/categories/%E4%B8%BB%E9%A2%98/"/>
+              <breadCrumb title="AI" url="https://fengzean.xyz/categories/AI/"/>
           
         </display>
     </data>
