@@ -5,9 +5,9 @@
   <subtitle>专注于C/C++、Python、Golang、移动互联网、人工智能、微服务</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://fengzean.xyz/"/>
+  <link href="https://www.littlefeng.com/"/>
   <updated>2018-09-12T16:48:40.143Z</updated>
-  <id>https://fengzean.xyz/</id>
+  <id>https://www.littlefeng.com/</id>
   
   <author>
     <name>Frazer</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ubuntu下PPPOE拨号上网方法</title>
-    <link href="https://fengzean.xyz/2018/09/13/linux-pppoe/"/>
-    <id>https://fengzean.xyz/2018/09/13/linux-pppoe/</id>
+    <link href="https://www.littlefeng.com/2018/09/13/linux-pppoe/"/>
+    <id>https://www.littlefeng.com/2018/09/13/linux-pppoe/</id>
     <published>2018-09-12T17:30:00.000Z</published>
     <updated>2018-09-12T16:48:40.143Z</updated>
     
@@ -35,15 +35,15 @@
     
     </summary>
     
-      <category term="科学上网" scheme="https://fengzean.xyz/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="https://www.littlefeng.com/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
     
   </entry>
   
   <entry>
     <title>SSL/TLS认证申请踩坑记</title>
-    <link href="https://fengzean.xyz/2018/09/11/SSL%E8%AE%A4%E8%AF%81%E7%94%B3%E8%AF%B7%E8%B8%A9%E5%9D%91%E8%AE%B0/"/>
-    <id>https://fengzean.xyz/2018/09/11/SSL认证申请踩坑记/</id>
+    <link href="https://www.littlefeng.com/2018/09/11/SSL%E8%AE%A4%E8%AF%81%E7%94%B3%E8%AF%B7%E8%B8%A9%E5%9D%91%E8%AE%B0/"/>
+    <id>https://www.littlefeng.com/2018/09/11/SSL认证申请踩坑记/</id>
     <published>2018-09-11T13:30:00.000Z</published>
     <updated>2018-09-14T15:31:59.466Z</updated>
     
@@ -58,17 +58,17 @@
     
     </summary>
     
-      <category term="tcp/ip" scheme="https://fengzean.xyz/categories/tcp-ip/"/>
+      <category term="tcp/ip" scheme="https://www.littlefeng.com/categories/tcp-ip/"/>
     
-      <category term="https" scheme="https://fengzean.xyz/categories/tcp-ip/https/"/>
+      <category term="https" scheme="https://www.littlefeng.com/categories/tcp-ip/https/"/>
     
     
   </entry>
   
   <entry>
     <title>关于Google神牛Jeff Dean的笑话，非程序员勿入</title>
-    <link href="https://fengzean.xyz/2018/09/11/%E5%85%B3%E4%BA%8EGoogle%E7%A5%9E%E7%89%9BJeff%20Dean%E7%9A%84%E7%AC%91%E8%AF%9D%EF%BC%8C%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8B%BF%E5%85%A5/"/>
-    <id>https://fengzean.xyz/2018/09/11/关于Google神牛Jeff Dean的笑话，非程序员勿入/</id>
+    <link href="https://www.littlefeng.com/2018/09/11/%E5%85%B3%E4%BA%8EGoogle%E7%A5%9E%E7%89%9BJeff%20Dean%E7%9A%84%E7%AC%91%E8%AF%9D%EF%BC%8C%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8B%BF%E5%85%A5/"/>
+    <id>https://www.littlefeng.com/2018/09/11/关于Google神牛Jeff Dean的笑话，非程序员勿入/</id>
     <published>2018-09-11T03:21:04.054Z</published>
     <updated>2018-09-11T03:21:04.054Z</updated>
     
@@ -80,17 +80,17 @@
     
     </summary>
     
-      <category term="AI" scheme="https://fengzean.xyz/categories/AI/"/>
+      <category term="AI" scheme="https://www.littlefeng.com/categories/AI/"/>
     
-      <category term="google" scheme="https://fengzean.xyz/categories/AI/google/"/>
+      <category term="google" scheme="https://www.littlefeng.com/categories/AI/google/"/>
     
     
   </entry>
   
   <entry>
     <title>AI100</title>
-    <link href="https://fengzean.xyz/2018/09/11/AI100/"/>
-    <id>https://fengzean.xyz/2018/09/11/AI100/</id>
+    <link href="https://www.littlefeng.com/2018/09/11/AI100/"/>
+    <id>https://www.littlefeng.com/2018/09/11/AI100/</id>
     <published>2018-09-10T17:19:45.916Z</published>
     <updated>2018-09-10T17:19:45.916Z</updated>
     
@@ -102,15 +102,15 @@
     
     </summary>
     
-      <category term="AI" scheme="https://fengzean.xyz/categories/AI/"/>
+      <category term="AI" scheme="https://www.littlefeng.com/categories/AI/"/>
     
     
   </entry>
   
   <entry>
     <title>ARTS_week1</title>
-    <link href="https://fengzean.xyz/2018/09/11/arts_20180907_week1/"/>
-    <id>https://fengzean.xyz/2018/09/11/arts_20180907_week1/</id>
+    <link href="https://www.littlefeng.com/2018/09/11/arts_20180907_week1/"/>
+    <id>https://www.littlefeng.com/2018/09/11/arts_20180907_week1/</id>
     <published>2018-09-10T17:19:41.676Z</published>
     <updated>2018-09-10T17:19:41.676Z</updated>
     
@@ -123,15 +123,15 @@
     
     </summary>
     
-      <category term="ARTS" scheme="https://fengzean.xyz/categories/ARTS/"/>
+      <category term="ARTS" scheme="https://www.littlefeng.com/categories/ARTS/"/>
     
     
   </entry>
   
   <entry>
     <title>20180910_ARTS_week02</title>
-    <link href="https://fengzean.xyz/2018/09/10/20180910-ARTS-week02/"/>
-    <id>https://fengzean.xyz/2018/09/10/20180910-ARTS-week02/</id>
+    <link href="https://www.littlefeng.com/2018/09/10/20180910-ARTS-week02/"/>
+    <id>https://www.littlefeng.com/2018/09/10/20180910-ARTS-week02/</id>
     <published>2018-09-10T13:58:00.000Z</published>
     <updated>2018-09-11T03:19:32.999Z</updated>
     
@@ -146,15 +146,15 @@
     
     </summary>
     
-      <category term="ARTS" scheme="https://fengzean.xyz/categories/ARTS/"/>
+      <category term="ARTS" scheme="https://www.littlefeng.com/categories/ARTS/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello website!</title>
-    <link href="https://fengzean.xyz/2018/09/09/1st/"/>
-    <id>https://fengzean.xyz/2018/09/09/1st/</id>
+    <link href="https://www.littlefeng.com/2018/09/09/1st/"/>
+    <id>https://www.littlefeng.com/2018/09/09/1st/</id>
     <published>2018-09-09T13:58:00.000Z</published>
     <updated>2018-09-11T03:19:21.015Z</updated>
     
@@ -170,15 +170,15 @@
     
     </summary>
     
-      <category term="主题" scheme="https://fengzean.xyz/categories/%E4%B8%BB%E9%A2%98/"/>
+      <category term="主题" scheme="https://www.littlefeng.com/categories/%E4%B8%BB%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>nginx是个啥?</title>
-    <link href="https://fengzean.xyz/2018/09/09/nginx-fo-qd/"/>
-    <id>https://fengzean.xyz/2018/09/09/nginx-fo-qd/</id>
+    <link href="https://www.littlefeng.com/2018/09/09/nginx-fo-qd/"/>
+    <id>https://www.littlefeng.com/2018/09/09/nginx-fo-qd/</id>
     <published>2018-09-09T10:58:00.000Z</published>
     <updated>2018-09-10T17:19:31.464Z</updated>
     
@@ -191,17 +191,17 @@
     
     </summary>
     
-      <category term="前端" scheme="https://fengzean.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://www.littlefeng.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="JS" scheme="https://fengzean.xyz/categories/%E5%89%8D%E7%AB%AF/JS/"/>
+      <category term="JS" scheme="https://www.littlefeng.com/categories/%E5%89%8D%E7%AB%AF/JS/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux基础知识</title>
-    <link href="https://fengzean.xyz/2018/09/08/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>https://fengzean.xyz/2018/09/08/Linux基础知识/</id>
+    <link href="https://www.littlefeng.com/2018/09/08/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://www.littlefeng.com/2018/09/08/Linux基础知识/</id>
     <published>2018-09-08T04:58:00.000Z</published>
     <updated>2018-09-10T17:19:37.572Z</updated>
     
@@ -213,17 +213,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://fengzean.xyz/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.littlefeng.com/categories/Linux/"/>
     
-      <category term="主题" scheme="https://fengzean.xyz/categories/Linux/%E4%B8%BB%E9%A2%98/"/>
+      <category term="主题" scheme="https://www.littlefeng.com/categories/Linux/%E4%B8%BB%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
     <title>机器学习常见算法总结</title>
-    <link href="https://fengzean.xyz/2018/09/07/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>https://fengzean.xyz/2018/09/07/机器学习常见算法总结/</id>
+    <link href="https://www.littlefeng.com/2018/09/07/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>https://www.littlefeng.com/2018/09/07/机器学习常见算法总结/</id>
     <published>2018-09-07T13:58:00.000Z</published>
     <updated>2018-09-15T05:35:49.196Z</updated>
     
@@ -235,15 +235,15 @@
     
     </summary>
     
-      <category term="AI" scheme="https://fengzean.xyz/categories/AI/"/>
+      <category term="AI" scheme="https://www.littlefeng.com/categories/AI/"/>
     
     
   </entry>
   
   <entry>
     <title>图像边缘检测</title>
-    <link href="https://fengzean.xyz/2018/09/07/%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B/"/>
-    <id>https://fengzean.xyz/2018/09/07/边缘检测/</id>
+    <link href="https://www.littlefeng.com/2018/09/07/%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B/"/>
+    <id>https://www.littlefeng.com/2018/09/07/边缘检测/</id>
     <published>2018-09-07T13:58:00.000Z</published>
     <updated>2018-09-15T05:43:06.651Z</updated>
     
@@ -255,15 +255,15 @@
     
     </summary>
     
-      <category term="图像处理" scheme="https://fengzean.xyz/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+      <category term="图像处理" scheme="https://www.littlefeng.com/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
     
   </entry>
   
   <entry>
     <title>图像特征</title>
-    <link href="https://fengzean.xyz/2017/12/06/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
-    <id>https://fengzean.xyz/2017/12/06/特征提取/</id>
+    <link href="https://www.littlefeng.com/2017/12/06/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
+    <id>https://www.littlefeng.com/2017/12/06/特征提取/</id>
     <published>2017-12-06T13:58:00.000Z</published>
     <updated>2018-09-15T06:26:26.192Z</updated>
     
@@ -275,9 +275,9 @@
     
     </summary>
     
-      <category term="图像处理" scheme="https://fengzean.xyz/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+      <category term="图像处理" scheme="https://www.littlefeng.com/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
     
-      <category term="特征提取" scheme="https://fengzean.xyz/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
+      <category term="特征提取" scheme="https://www.littlefeng.com/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
     
     
   </entry>
