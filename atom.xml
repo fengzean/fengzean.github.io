@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.littlefeng.com/"/>
-  <updated>2018-09-20T15:45:24.415Z</updated>
+  <updated>2018-09-12T16:48:40.143Z</updated>
   <id>https://www.littlefeng.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Avril Lavigne 新歌MV</title>
-    <link href="https://www.littlefeng.com/2018/09/20/Avril%20Lavigne/"/>
-    <id>https://www.littlefeng.com/2018/09/20/Avril Lavigne/</id>
-    <published>2018-09-20T13:58:00.000Z</published>
-    <updated>2018-09-20T15:45:24.415Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2923031&auto=1&height=66"></iframe></center><br><center><iframe src="//player.bilibili.com/player.html?aid=32075534&cid=56110635&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></center><blockquote><p>Avril Lavigne 回归新歌MV bilibili在线</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="song" scheme="https://www.littlefeng.com/categories/song/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>ubuntu下PPPOE拨号上网方法</title>
