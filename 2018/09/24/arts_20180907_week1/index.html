@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://www.littlefeng.com">
-  <title>Category: Linux | e^iπ+1=0</title>
+  <title>ARTS_week1 | e^iπ+1=0</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
       <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,17 +23,18 @@
             border-left-color: #6d6d6d;    /*左边框颜色*/
         }
       </style>
-  <meta name="description" content="学习总结 思考感悟 知识管理">
-<meta name="keywords" content="c,cpp,python,Golang,ML,DL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="e^iπ+1=0">
-<meta property="og:url" content="https://www.littlefeng.com/categories/Linux/index.html">
+  <meta name="description" content="ARTSAlgorithm 无重复字符的最长子串。给定一个字符串，找出不含有重复字符的最长子串的长度。">
+<meta name="keywords" content="ARTS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ARTS_week1">
+<meta property="og:url" content="https://www.littlefeng.com/2018/09/24/arts_20180907_week1/index.html">
 <meta property="og:site_name" content="e^iπ+1=0">
-<meta property="og:description" content="学习总结 思考感悟 知识管理">
+<meta property="og:description" content="ARTSAlgorithm 无重复字符的最长子串。给定一个字符串，找出不含有重复字符的最长子串的长度。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-24T15:41:47.493Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="e^iπ+1=0">
-<meta name="twitter:description" content="学习总结 思考感悟 知识管理">
+<meta name="twitter:title" content="ARTS_week1">
+<meta name="twitter:description" content="ARTSAlgorithm 无重复字符的最长子串。给定一个字符串，找出不含有重复字符的最长子串的长度。">
   
     <link rel="alternative" href="/atom.xml" title="e^iπ+1=0" type="application/atom+xml">
   
@@ -76,7 +77,7 @@
 			
 				<li><a href="/">HOME</a></li>
 	        
-				<li><a href="/photos">Photos</a></li>
+				<li><a href="/Photos">Photos</a></li>
 	        
 				<li><a href="/archives">All Passages</a></li>
 	        
@@ -170,7 +171,7 @@
 				
 					<li style="width: 33.333333333333336%"><a href="/">HOME</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photos">Photos</a></li>
+					<li style="width: 33.333333333333336%"><a href="/Photos">Photos</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/archives">All Passages</a></li>
 		        
@@ -187,64 +188,287 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-arts_20180907_week1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/08/Linux基础知识/" class="archive-article-date">
-  	<time datetime="2018-09-08T04:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/08/Linux基础知识/">Linux基础知识</a>
+    <h1 class="article-title" itemprop="name">
+      ARTS_week1
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
+        
+        <a href="/2018/09/24/arts_20180907_week1/" class="archive-article-date">
+  	<time datetime="2018-09-24T15:41:47.493Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-24</time>
+</a>
+        
+      </header>
+    
+    <!-- 目录内容 -->
+    
+      <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+      <span class="btn-bg"></span>
+      <span class="btn-text">文章导航</span>
+      </p>
+      <div id="toc-article" class="toc-article">
+          <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+          <strong class="toc-title">文章目录</strong>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ARTS"><span class="toc-number">1.</span> <span class="toc-text">ARTS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm"><span class="toc-number">1.1.</span> <span class="toc-text">Algorithm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Review"><span class="toc-number">1.2.</span> <span class="toc-text">Review</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tip"><span class="toc-number">1.3.</span> <span class="toc-text">Tip</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Share"><span class="toc-number">1.4.</span> <span class="toc-text">Share</span></a></li></ol></li></ol>
+     </div>
+     <script type="text/javascript">
+      function showToc(){
+          var toc_article = document.getElementById("toc-article");
+          var show_toc_btn = document.getElementById("show-toc-btn");
+          toc_article.setAttribute("style","display:block");
+          show_toc_btn.setAttribute("style","display:none");
+          };
+      function showBtn(){
+          var toc_article = document.getElementById("toc-article");
+          var show_toc_btn = document.getElementById("show-toc-btn");
+          toc_article.setAttribute("style","display:none");
+          show_toc_btn.setAttribute("style","display:block");
+          };
+     </script>
+  
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ARTS"><a href="#ARTS" class="headerlink" title="ARTS"></a>ARTS</h1><h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr>
+<p>无重复字符的最长子串。<br>给定一个字符串，找出不含有重复字符的<strong>最长子串</strong>的长度。</p>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.length();</span><br><span class="line">        Set set = <span class="keyword">new</span> HashSet();</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>,i=<span class="number">0</span>,j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(i&lt;n &amp;&amp; j&lt;n)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!set.contains(s.charAt(j)))&#123;</span><br><span class="line">                set.add(s.charAt(j));</span><br><span class="line">                j++;</span><br><span class="line">                num = Math.max(num,j-i);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                set.remove(s.charAt(i));</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结题思路和遇到的问题：刚一看到问题，想到用set去除重复项，最后剩下即为不重复长度，但是验证发现，这样不能保证连续。之后尝试用list存储每段不重复字符串，然后用TreeSet记录每段长度，最后去最大的数字。代码实现时，将“dvdf”保留成“vdf”不好实现，也觉得这个方法不是个好方法。</p>
+<p>参考答案解法：<em>滑动窗口方法</em>。<br>滑动窗口是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合，即 [i,j)[i,j)（左闭，右开）。而滑动窗口是可以将两个边界向某一方向“滑动”的窗口。例如，我们将 [i,j)[i,j)向右滑动 11 个元素，则它将变为 [i+1,j+1)[i+1,j+1)（左闭，右开）。</p>
+<p>我们使用 HashSet 将字符存储在当前窗口 [i,j)[i,j)（最初 j=ij=i）中。 然后我们向右侧滑动索引 jj，如果它不在 HashSet 中，我们会继续滑动 jj。直到 s[j] 已经存在于 HashSet 中。此时，我们找到的没有重复字符的最长子字符串将会以索引 ii 开头。如果我们对所有的 ii 这样做，就可以得到答案。</p>
+<p><strong>复杂度分析</strong></p>
+<ul>
+<li>时间复杂度：O(2n)=O(n)O(2n)=O(n)，在最糟糕的情况下，每个字符将被 ii 和 jj 访问两次。</li>
+<li>空间复杂度：O(min(m,n))O(min(m,n))，与之前的方法相同。滑动窗口法需要 O(k)O(k) 的空间，其中 kk 表示 <code>Set</code> 的大小。而Set的大小取决于字符串 nn 的大小以及字符集/字母 mm 的大小。 </li>
+</ul>
+<p>优化的滑动窗口：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring2</span><span class="params">(String s)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n =s.length(),ans = <span class="number">0</span>;</span><br><span class="line">    Map&lt;Character,Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;j&lt;n;j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(map.containsKey(s.charAt(j))) &#123;</span><br><span class="line">            i = Math.max(map.get(s.charAt(j)),i);</span><br><span class="line">        &#125;</span><br><span class="line">        ans = Math.max(ans,j-i+<span class="number">1</span>);</span><br><span class="line">        map.put(s.charAt(j),j+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>滑动窗口的方法最多需要执行 2n 个步骤。事实上，它可以被进一步优化为仅需要 n 个步骤。我们可以定义字符到索引的映射，而不是使用集合来判断一个字符是否存在。 当我们找到重复的字符时，我们可以立即跳过该窗口。</p>
+<p>也就是说，如果 s[j]s[j] 在 [i,j)[i,j) 范围内有与 j′j′ 重复的字符，我们不需要逐渐增加 ii 。 我们可以直接跳过 [𝑖，𝑗][i，j′]范围内的所有元素，并将 ii 变为 j′+1j′+1。</p>
+<hr>
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>阅读文章：<a href="https://medium.com/zkcapital/the-state-of-hashing-algorithms-the-why-the-how-and-the-future-b21d5c0440de" target="_blank" rel="noopener">hash算法简介</a></p>
+<p>文章介绍了hash算法的概念。hash算法的基本思想就是每次固定的输入生成一个固定长度的相同输出，改变一点输入将导致完全不同的输出。但是碰撞时哈希算法的一个必然问题，会有其他可能的输入导致相同的散列值。一个好的哈希算法的目标就是使攻击者极难找到生成散列值形同的输入的方法。</p>
+<p>被广泛应用的Md5哈希，为每个输入输出一个128位的元字符串，使用一些琐碎的单向操作计算其确定性输出，但是短输出和操作的简单性使得MD5容易被打破，容易受到生日攻击。<strong>鸽巢原理：给100个鸽子和99个盒子，每个盒子上必须装上鸽子，必然有一个盒子会有两只鸽子。固定的输出约束意味着存在一定程度的排列变化，在此基础上可以发现碰撞。</strong>并且现在Md5已经有了大量泄露的前置图像。</p>
+<p>SHA1&amp;SHA2通过增加输出长度，单向操作数量和单向操作的复杂度来改进Md5,并没有根本性的改进。SHA3是KECCAK大型哈希算法的一部分，通过一个叫做海绵构造的机制，使用随机的排列变异来吸收输入输出数据，同时作为未来输入hashing算法的一种随机性来源。</p>
+<p>文章还介绍了比特币和Ethereum采用的哈希算法，比特币采用双重SHA256，Ethereum采用修改过的SHA3(KECCAK256)。</p>
+<p>哈希算法的未来看起来，1）增加内部散列操作的复杂性，2）增加哈希输出的长度，希望攻击者的计算机不会快到足以有效计算碰撞。</p>
+<hr>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><p>策略模式的实例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DirList</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        File path = <span class="keyword">new</span> File(<span class="string">"/Users/yangzexu/CodeData/skyLineProjects/ThinkInJavaTest/src/com/train/io"</span>);</span><br><span class="line"></span><br><span class="line">        String[] list = path.list(<span class="keyword">new</span> DirFiltter(<span class="string">"D.*.java"</span>));<span class="comment">//策略模式，在运行时选择行为方式</span></span><br><span class="line">        <span class="keyword">for</span> (String dirItem : list)&#123;</span><br><span class="line">            System.out.println(dirItem);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DirFiltter</span> <span class="keyword">implements</span> <span class="title">FilenameFilter</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Pattern pattern;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DirFiltter</span><span class="params">(String regex)</span></span>&#123;</span><br><span class="line">        pattern = Pattern.compile(regex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">accept</span><span class="params">(File dir, String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> pattern.matcher(name).matches();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>File类的path方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> String[] list(FilenameFilter filter) &#123;</span><br><span class="line">    String names[] = list();</span><br><span class="line">    <span class="keyword">if</span> ((names == <span class="keyword">null</span>) || (filter == <span class="keyword">null</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span> names;</span><br><span class="line">    &#125;</span><br><span class="line">    List&lt;String&gt; v = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; names.length ; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (filter.accept(<span class="keyword">this</span>, names[i])) &#123;</span><br><span class="line">            v.add(names[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> v.toArray(<span class="keyword">new</span> String[v.size()]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>list()</strong>方法实现了基本的功能，并且按照<strong>FilenameFilter</strong>的形式提供了这个<strong><em>策略</em></strong>，以便完善<strong>list()</strong>在提供服务时所需要的算法。因为<strong>list()</strong>接受<strong>FilenameFilter</strong>对对象作为参数，这意味着我们可以传递实现了<strong>FilenameFilter</strong>接口的任何类的对象，用以选择（甚至在运行时）<strong>list()</strong>的行为方式。<strong>策略模式的目的就是提供了代码行为的灵活性</strong>。</p>
+<hr>
+<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><p>这周加入左耳听风，感觉自己的目标一下子就明确了。以下摘自程序员练级攻略开篇词。</p>
+<blockquote>
+<p>通过这一系列文章，我主要想回答以下几个问题。</p>
+<p><strong>理论和现实的差距</strong>。你是否觉得自己从学校毕业的时候只做过小玩具一样的程序？走入职场后哪怕没有什么经验也可以把文中提到的这些课外练习走一遍。学校课程总是从理论出发，作业项目都看不出有什么实际作用，到了工作上发现自己什么也不会干。</p>
+<p><strong>技术能力的瓶颈</strong>。你又是否觉得，在工作当中需要的技术只不过是不断地堆业务功能，完全没有什么技术含量。而你工作一段时间后，自己都感觉得非常地迷茫和彷徨，感觉到达了提高的瓶颈，完全不知道怎么提升了。</p>
+<p><strong>技术太多学不过来</strong>。你是否又觉得，要学的技术多得都不行了，完全不知道怎么学？感觉完全跟不上。有没有什么速成的方法？</p>
+<p>对此，我有如下的一些解释，以端正一下你的态度。</p>
+<p>并不是理论和现实的差距大，而是你还没有找到相关的场景，来感受到那些学院派的知识的强大威力。算法与数据结构、操作系统原理、编译原理、数据库原理、计算机原理……这些原理上的东西，是你想要成为一个专家必需要学的东西。<strong>这就是“工人”和“工程师”的差别，是“建筑工人”和“建筑架构师”的差别</strong>。如果你觉得这些理论上的东西无用，那么只能说明，你只不过在从事工人的工作，而不是工程师的工作。</p>
+<p><strong>技术能力的瓶颈，以及技术太多学不过来，只不过是你为自己的能力不足或是懒惰找的借口罢了</strong>。技术的东西都是死的，这些死的知识只要努力就是可以学会的。只不过聪明的人花得时间少，笨点的人花得时间多点罢了。这其中的时间差距主要是由学习方法的不同，基础知识储备的不同造成的。只要你的方法得当，多花点时间在基础知识上，会让你未来学习应用知识的时间大大缩短。<strong>以绝大多数人努力的程度，和为自己不努力找借口的程度为参考，只要你坚持正常的学习就可以超过大多数人</strong>了。</p>
+<p><strong>这里没有学习技术的速成的方法，真正的牛人不是能够培训出来的，一切都是要靠你自己去努力和持续地付出</strong>。如果你觉得自己不是一个能坚持的人，也不是一个想努力的人，而是一个想找捷径的人，那么，这篇文章并不适合你。这篇文章中的成长路径是需要思考、精力和相关的经验的，这都需要时间，而且是不短的时间。你先问问自己有没有<strong>花十年磨一剑的决心</strong>，如果没有，那这篇文章对你没有任何作用。</p>
+</blockquote>
+<p>以下摘自 程序员面试攻略。</p>
+<blockquote>
+<p>要应付并通过面试并不难，但是，千万不要应付你的人生，你学技术不是用来面试的，它只是你谋生的技能，要尊重自己的谋生技能，说不定，哪天你还要用这些技能造福社会、改变世界的。</p>
+</blockquote>
+<p><strong>不要懒惰，脚踏实地，不要着急。用一点点的努力和持续的付出来十年磨一剑，尊重自己的谋生技能。</strong></p>
+
+      
+    <!--文章内版权说明开始-->
+    
+  
+    <div class="declare">
+    <strong>本文链接：</strong>
+    https://www.littlefeng.com/2018/09/24/arts_20180907_week1/
+    <br>
+    <strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。转载请注明出处！
+    <br>
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    </div>
+  
+    <!--文章内版权说明结束--> 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Linux//" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux/主题//" class="article-tag-list-link color3">主题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ARTS</a>
         		</li>
       		
 		</ul>
 	</div>
 
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.littlefeng.com/2018/09/24/arts_20180907_week1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/09/24/关于Google神牛Jeff Dean的笑话，非程序员勿入/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          关于Google神牛Jeff Dean的笑话，非程序员勿入
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/09/24/AI100/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">AI100</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'Mon Sep 24 2018 23:41:47 GMT+0800',
+  owner: 'fengzean',
+  repo: 'fengzean.github.io',
+  oauth: {
+    client_id: '2d1de0fced863a0e251b',
+    client_secret: 'ac0b3632126b075480dc4ac0001a11c7c8b799ed',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+
+  
 
 
           </div>
@@ -278,10 +502,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
