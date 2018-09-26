@@ -42,6 +42,26 @@
   </entry>
   
   <entry>
+    <title>一张图搞定OSI模型</title>
+    <link href="https://www.littlefeng.com/2018/09/25/OSI/"/>
+    <id>https://www.littlefeng.com/2018/09/25/OSI/</id>
+    <published>2018-09-25T13:30:00.000Z</published>
+    <updated>2018-09-26T16:28:03.712Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p><img src="/assets/blogImg/OSI.jpg" alt=""></p><a id="more"></a><h3 id="相关协议-缩写"><a href="#相关协议-缩写" class="headerlink" title="相关协议 缩写"></a>相关协议 缩写</h3><h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p>HTTP 超文本传输协议<br>FTP 文件传输协议<br>SMTP 简单邮件传输协议<br>ELNET TCP/IP终端仿真协议<br>POP3 邮局协议第三版<br>Finger 用户信息协议<br>NNTP 网络新闻传输协议<br>IMAP4 因特网信息访问协议第四版<br>LPR UNIX 远程打印协议<br>Rwho UNIX 远程 Who协议<br>Rexec UNIX远程执行协议<br>Login UNIX 远程登陆协议<br>RSH UNIX 远程Shell协议<br>NTF HP网络文件传输协议<br>RDA HP 远程数据库访问协议<br>VT 虚拟终端仿真协议<br>RFA HP 远程文件访问协议<br>RPC Remote Process Comm.<br>S-HTTP 安全超文本传输协议<br>GDP网关发现协议<br>X-Window<br>CMOT 基于TCP/IP的CMIP协议<br>SOCKS 安全套接字协议<br>FANP流属性通知协议<br>SLP服务定位协议<br>MSN微软网络服务<br>Radius 远程用户拨号认证服务协议<br>DNS 域名系统<br>NFS网络文件系统协议<br>NIS SUN 网络信息系统协议<br>R-STAT SUN远程状态协议<br>NSM SUN 网络状态监测协议<br>PMAP SUN 端口映射协议<br>Mount<br>LPR UNIX远程打印协议<br>常用UDP协议的应用层服务<br>BOOTP引导协议<br>DHCP动态主机配套协议<br>NTP网络时间协议<br>TFTP简单文件传输协议<br>SNMP简单网络管理协议</p><h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p>DECnet NSP<br>LPP 轻量级表示协议<br>NBSSN NetBIOS会话服务协议<br>XDP外部数据表示协议<br>IPX</p><h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p>SSL 安全套接字层协议<br>TLS传输层安全协议<br>DAP目录访问协议<br>LDAP轻量级目录访问协议<br>RPC远程过程调用协议<br>VINES NETRPC<br>VFRP<br>NeTBIOS<br>IPX</p><h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p>XOT 基于tcp之上的X协议<br>Van Jacobson 压缩TCP协议<br>ISO-DE ISO 开发环境——–&gt;NetBISO<br>TALI 传输适配层接口协议<br>DSI、NetBIOS、IP NeTBIOS、ISO-TP SSP、SMB、MSRPC<br>UDP用户数据报协议<br>RUDP可靠的用户数据报协议<br>Mobile IP 移动IP协议</p><h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p>IP/IPv6 互联网协议/互联网协议第六版<br>ICMPv6互联网控制信息协议第六版<br>ICMP互联网控制信息协议<br>IGMP 互联网组管理协议<br>SLIP 串行线路IP协议<br>安全协议<br>AH 认证头协议<br>ESP 安装封装有效载荷协议<br>路由协议<br>EGP 外部网关协议<br>OSPF 开放最短路径优先协议<br>IGRP 内部网关路由协议<br>NHRP 下一跳解析协议<br>IE-IRGP 增强内部网关路由选择协议<br>RIPng for IPv6 IPv6路由信息协议<br>GGP 网关到网关协议<br>VRRP 虚拟路由器冗余协议<br>PGM 实际通用组播协议<br>RSVP 资源预留协议<br>PIM-DM 密集模式独立组播协议<br>DVMRP 距离矢量组播路由协议<br>RIP2 路由信息协议第二版<br>PIM-SM 稀疏模式独立组播协议<br>MOSPF 组播开放最短路径优先协议</p><h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p>MPLS 多协议标签交换协议<br>XTP 压缩传输协议<br>DCAP 数据转换客户访问协议<br>SLE 串行连接封装协议<br>IPinIP IP套IP封装协议<br>隧道协议<br>PPTP点对点隧道协议<br>L2F第二层转发协议<br>L2TP 第二层隧道协议<br>ATMP接入隧道管理协议<br>Cisco 协议<br>CDP 思科发现协议<br>CGMP 思科组管理协议<br>地址解析协议<br>ARP地址解析协议<br>RAR逆向地址解析协议</p><h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p>IEEE 802.2<br>Ethernet v.2<br>Internetwork</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;OSI七层模型&quot;&gt;&lt;a href=&quot;#OSI七层模型&quot; class=&quot;headerlink&quot; title=&quot;OSI七层模型&quot;&gt;&lt;/a&gt;OSI七层模型&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/assets/blogImg/OSI.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tcp/ip" scheme="https://www.littlefeng.com/categories/tcp-ip/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>关于Google神牛Jeff Dean的笑话，非程序员勿入</title>
     <link href="https://www.littlefeng.com/2018/09/24/%E5%85%B3%E4%BA%8EGoogle%E7%A5%9E%E7%89%9BJeff%20Dean%E7%9A%84%E7%AC%91%E8%AF%9D%EF%BC%8C%E9%9D%9E%E7%A8%8B%E5%BA%8F%E5%91%98%E5%8B%BF%E5%85%A5/"/>
     <id>https://www.littlefeng.com/2018/09/24/关于Google神牛Jeff Dean的笑话，非程序员勿入/</id>
