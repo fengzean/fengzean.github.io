@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.littlefeng.com/"/>
-  <updated>2018-09-26T16:29:47.303Z</updated>
+  <updated>2018-10-01T04:41:40.046Z</updated>
   <id>https://www.littlefeng.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.littlefeng.com/2018/09/27/OSI/"/>
     <id>https://www.littlefeng.com/2018/09/27/OSI/</id>
     <published>2018-09-27T13:30:00.000Z</published>
-    <updated>2018-09-26T16:29:47.303Z</updated>
+    <updated>2018-10-01T04:41:40.046Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h2><p><img src="/assets/blogImg/OSI.jpg" alt=""></p><a id="more"></a><h3 id="相关协议-缩写"><a href="#相关协议-缩写" class="headerlink" title="相关协议 缩写"></a>相关协议 缩写</h3><h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p>HTTP 超文本传输协议<br>FTP 文件传输协议<br>SMTP 简单邮件传输协议<br>ELNET TCP/IP终端仿真协议<br>POP3 邮局协议第三版<br>Finger 用户信息协议<br>NNTP 网络新闻传输协议<br>IMAP4 因特网信息访问协议第四版<br>LPR UNIX 远程打印协议<br>Rwho UNIX 远程 Who协议<br>Rexec UNIX远程执行协议<br>Login UNIX 远程登陆协议<br>RSH UNIX 远程Shell协议<br>NTF HP网络文件传输协议<br>RDA HP 远程数据库访问协议<br>VT 虚拟终端仿真协议<br>RFA HP 远程文件访问协议<br>RPC Remote Process Comm.<br>S-HTTP 安全超文本传输协议<br>GDP网关发现协议<br>X-Window<br>CMOT 基于TCP/IP的CMIP协议<br>SOCKS 安全套接字协议<br>FANP流属性通知协议<br>SLP服务定位协议<br>MSN微软网络服务<br>Radius 远程用户拨号认证服务协议<br>DNS 域名系统<br>NFS网络文件系统协议<br>NIS SUN 网络信息系统协议<br>R-STAT SUN远程状态协议<br>NSM SUN 网络状态监测协议<br>PMAP SUN 端口映射协议<br>Mount<br>LPR UNIX远程打印协议<br>常用UDP协议的应用层服务<br>BOOTP引导协议<br>DHCP动态主机配套协议<br>NTP网络时间协议<br>TFTP简单文件传输协议<br>SNMP简单网络管理协议</p><h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p>DECnet NSP<br>LPP 轻量级表示协议<br>NBSSN NetBIOS会话服务协议<br>XDP外部数据表示协议<br>IPX</p><h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p>SSL 安全套接字层协议<br>TLS传输层安全协议<br>DAP目录访问协议<br>LDAP轻量级目录访问协议<br>RPC远程过程调用协议<br>VINES NETRPC<br>VFRP<br>NeTBIOS<br>IPX</p><h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p>XOT 基于tcp之上的X协议<br>Van Jacobson 压缩TCP协议<br>ISO-DE ISO 开发环境——–&gt;NetBISO<br>TALI 传输适配层接口协议<br>DSI、NetBIOS、IP NeTBIOS、ISO-TP SSP、SMB、MSRPC<br>UDP用户数据报协议<br>RUDP可靠的用户数据报协议<br>Mobile IP 移动IP协议</p><h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p>IP/IPv6 互联网协议/互联网协议第六版<br>ICMPv6互联网控制信息协议第六版<br>ICMP互联网控制信息协议<br>IGMP 互联网组管理协议<br>SLIP 串行线路IP协议<br>安全协议<br>AH 认证头协议<br>ESP 安装封装有效载荷协议<br>路由协议<br>EGP 外部网关协议<br>OSPF 开放最短路径优先协议<br>IGRP 内部网关路由协议<br>NHRP 下一跳解析协议<br>IE-IRGP 增强内部网关路由选择协议<br>RIPng for IPv6 IPv6路由信息协议<br>GGP 网关到网关协议<br>VRRP 虚拟路由器冗余协议<br>PGM 实际通用组播协议<br>RSVP 资源预留协议<br>PIM-DM 密集模式独立组播协议<br>DVMRP 距离矢量组播路由协议<br>RIP2 路由信息协议第二版<br>PIM-SM 稀疏模式独立组播协议<br>MOSPF 组播开放最短路径优先协议</p><h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p>MPLS 多协议标签交换协议<br>XTP 压缩传输协议<br>DCAP 数据转换客户访问协议<br>SLE 串行连接封装协议<br>IPinIP IP套IP封装协议<br>隧道协议<br>PPTP点对点隧道协议<br>L2F第二层转发协议<br>L2TP 第二层隧道协议<br>ATMP接入隧道管理协议<br>Cisco 协议<br>CDP 思科发现协议<br>CGMP 思科组管理协议<br>地址解析协议<br>ARP地址解析协议<br>RAR逆向地址解析协议</p><h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p>IEEE 802.2<br>Ethernet v.2<br>Internetwork</p>]]></content>
     
@@ -31,8 +31,8 @@
     
     </summary>
     
-      <category term="tcp/ip" scheme="https://www.littlefeng.com/categories/tcp-ip/"/>
     
+      <category term="tcp/ip" scheme="https://www.littlefeng.com/tags/tcp-ip/"/>
     
   </entry>
   
@@ -41,7 +41,7 @@
     <link href="https://www.littlefeng.com/2018/09/25/SSL%E8%AE%A4%E8%AF%81%E7%94%B3%E8%AF%B7%E8%B8%A9%E5%9D%91%E8%AE%B0/"/>
     <id>https://www.littlefeng.com/2018/09/25/SSL认证申请踩坑记/</id>
     <published>2018-09-25T13:30:00.000Z</published>
-    <updated>2018-09-24T15:52:53.412Z</updated>
+    <updated>2018-10-01T04:42:08.115Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22789069&auto=0&height=66"></iframe><h3 id="1-SSL-TLS证书简介（摘自维基百科）"><a href="#1-SSL-TLS证书简介（摘自维基百科）" class="headerlink" title="1.SSL/TLS证书简介（摘自维基百科）"></a>1.SSL/TLS证书简介（摘自维基百科）</h3><p><img src="/assets/blogImg/scure.jpg" alt=""></p><p><strong>传输层安全性协议</strong>（英语：Transport Layer Security，<a href="https://zh.wikipedia.org/wiki/%E7%B8%AE%E5%AF%AB" target="_blank" rel="noopener">缩写</a>作 <strong>TLS</strong>），及其前身<strong>安全套接层</strong>（Secure Sockets Layer，缩写作 <strong>SSL</strong>）是一种<a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">安全协议</a>，目的是为<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%9A%9B%E7%B6%B2%E8%B7%AF" target="_blank" rel="noopener">互联网</a>通信，提供安全及数据<a href="https://zh.wikipedia.org/wiki/%E5%AE%8C%E6%95%B4%E6%80%A7" target="_blank" rel="noopener">完整性</a>保障。<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF" target="_blank" rel="noopener">网景</a>公司（Netscape）在1994年推出首版<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">网页浏览器</a>，<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E6%99%AF%E9%A0%98%E8%88%AA%E5%93%A1" target="_blank" rel="noopener">网景导航者</a>时，推出<a href="https://zh.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a>协议，以SSL进行加密，这是SSL的起源。<a href="https://zh.wikipedia.org/wiki/IETF" target="_blank" rel="noopener">IETF</a>将SSL进行标准化，1999年公布第一版TLS标准文件。随后又公布RFC 5246 （2008年8月）与 <a href="https://tools.ietf.org/html/rfc6176" target="_blank" rel="noopener">RFC 6176</a> （2011年3月）。在<a href="https://zh.wikipedia.org/wiki/%E7%80%8F%E8%A6%BD%E5%99%A8" target="_blank" rel="noopener">浏览器</a>、<a href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E9%83%B5%E4%BB%B6" target="_blank" rel="noopener">电子邮件</a>、<a href="https://zh.wikipedia.org/wiki/%E5%8D%B3%E6%99%82%E9%80%9A%E8%A8%8A" target="_blank" rel="noopener">即时通信</a>、<a href="https://zh.wikipedia.org/wiki/VoIP" target="_blank" rel="noopener">VoIP</a>、<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E7%B5%A1%E5%82%B3%E7%9C%9F" target="_blank" rel="noopener">网络传真</a>等应用程序中，广泛支持这个协议。主要的网站，如<a href="https://zh.wikipedia.org/wiki/Google" target="_blank" rel="noopener">Google</a>、<a href="https://zh.wikipedia.org/wiki/Facebook" target="_blank" rel="noopener">Facebook</a>等也以这个协议来创建安全连线，发送数据。目前已成为<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91" target="_blank" rel="noopener">互联网</a>上保密通信的工业标准。</p><a id="more"></a><p>SSL包含记录层（Record Layer）和传输层，记录层协议确定传输层数据的封装格式。传输层安全协议使用<a href="https://zh.wikipedia.org/wiki/X.509" target="_blank" rel="noopener">X.509</a>认证，之后利用非对称加密演算来对通信方做身份认证，之后交换对称密钥作为会谈密钥（<a href="https://zh.wikipedia.org/wiki/Session_key" target="_blank" rel="noopener">Session key</a>）。这个会谈密钥是用来将通信两方交换的数据做加密，保证两个应用间通信的保密性和可靠性，使客户与服务器应用之间的通信不被攻击者窃听。</p><h3 id="2-遇到的问题"><a href="#2-遇到的问题" class="headerlink" title="2.遇到的问题"></a>2.遇到的问题</h3><p>由于网页代码托管平台的关系（国内托管于coding，国外托管于github），在github上先完成托管，因此 DNS 的 CNAME 记录先设置为将域名解析到<code>github.io</code>，同时域名启用https解析（github不支持SSL证书上传），步骤和详情<a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/" target="_blank" rel="noopener">请戳</a>，coding托管是后来完成的，此时也想让coding的静态 Pages 应用(<code>coding.me</code>)启用https协议，同时申请SSL/TLS 安全证书，这是问题出现了，SSL证书死活申请不成功，主要是半小时才能申请一次，其实也有技巧，报错信息为：</p><blockquote><p>urn:acme:error:unauthorized:Invalid response from <a href="http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" target="_blank" rel="noopener">http://exmaple.com/.well-known/acme-challenge/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a>: xxxxxxxxx</p></blockquote><p>，同时在<a href="https://ziyuan.baidu.com/?castk=LTE%3D" target="_blank" rel="noopener">百度长站</a>提交的htpps认证也不成功，抓取诊断（抓取UA分别为PC和移动）均处出现抓取失败，如下：</p><p><img src="/assets/blogImg/PUA.png" alt=""></p><p>出现了拒绝访问的情形。</p><h3 id="3-分析原因"><a href="#3-分析原因" class="headerlink" title="3.分析原因"></a>3.分析原因</h3><p>根据上面错误的情形，google了一下，发现了Coding Pages的官方文件：<a href="https://coding.net/help/faq/pages/coding-pages-faq.html" target="_blank" rel="noopener">Coding Pages 常见问题</a></p><p>这时候按照官方文件的指引，找到了和我一样的错误信息的解决方案：</p><blockquote><p>错误原因：无法获取正确的域名验证信息<br>解决方式1：检查 DNS 的 CNAME 记录是否设置正确，静态 Pages 为 <code>pages.coding.me</code>，动态 Pages 为 <code>pages.coding.io</code><br>解决方式2：检查域名的 DNS 是否将海外线路解析到 Coding Pages 的服务器</p></blockquote><p>由于Coding Pages的静态Pages是免费的，于是解决方式1对我来说就不存在了，接着联想到之前我对部署在GitHub Pages上的个人站点进行了自定义域名绑定+域名解析设置，有些豁然开朗的感觉。由于我的个人站点是同时部署到GitHub 和Coding 上，接着在腾讯域名解析里进行了配置：国内的解析线路将我的域名指向<code>coding.me</code>，默认的解析路线则是指向了<code>github.io</code>。</p><p>之所以这样配置，是因为国内部分地区无法直接访问GitHub（百度的spider也无法爬取github的内容，然而google就厉害得多了），自然就无法访问我托管在GitHub上的网页代码，于是我又选择了Codingt的静态Pages服务，这样国内用户就可以快速访问到我托管在Coding 的网页代码，而国外用户则是快速访问到github上的网页代码。</p><p>问题就出现在这里，因为在申请coding的请SSL/TLS证书之前，已有对github的国外解析路线，同时申请时候直接解析了国外线路，导致在Coding 的后台在申请证书时无法通过验证，自然就申请失败了。</p><p>因此解决该问题应该用上述的解决方式2。</p><h3 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4.解决方法"></a>4.解决方法</h3><p><img src="/assets/blogImg/DNS解析.png" alt=""></p><p>登陆到腾讯云域名解析的后台系统，打开个人域名的解析设置，暂停对于上图红框内所有线路的解析，然后大概需要10分钟左右的生效时间，毕竟DNS解析是存在缓存的。10分钟后进入Coding 静态 Pages 应用服务的后台，再一次申请SSL/TLS证书，果不其然，几秒钟后申请证书成功。</p><p><img src="/assets/blogImg/SSL.png" alt=""></p><p>最后，再次返回腾讯云域名解析的后台，将红框内的线路再次启用，顺利解决。此时去申请百度长站的https认证也成功了，抓取数据也ok了。</p><p><img src="/assets/blogImg/httpsBAidu.png" alt=""></p><p>总结：先关掉国外的线路解析，然后申请SSL证书，成功后再启用之前关掉的线路。</p>]]></content>
     
@@ -54,10 +54,10 @@
     
     </summary>
     
-      <category term="tcp/ip" scheme="https://www.littlefeng.com/categories/tcp-ip/"/>
     
-      <category term="https" scheme="https://www.littlefeng.com/categories/tcp-ip/https/"/>
+      <category term="tcp/ip" scheme="https://www.littlefeng.com/tags/tcp-ip/"/>
     
+      <category term="https" scheme="https://www.littlefeng.com/tags/https/"/>
     
   </entry>
   
@@ -152,7 +152,7 @@
     <link href="https://www.littlefeng.com/2018/09/23/1st/"/>
     <id>https://www.littlefeng.com/2018/09/23/1st/</id>
     <published>2018-09-23T13:58:00.000Z</published>
-    <updated>2018-09-24T15:54:24.119Z</updated>
+    <updated>2018-10-01T04:42:28.363Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28191113&auto=0&height=66"></iframe><p>在微博大V的推荐和耗子叔的读书会的帮助下,个人博客网站终于建立起来了.</p><p>先看一下大体的预览图</p><p><img src="/assets/blogImg/pro.png" alt=""></p><a id="more"></a><h3 id="1-搭建个人博客网站的初衷"><a href="#1-搭建个人博客网站的初衷" class="headerlink" title="1 搭建个人博客网站的初衷"></a>1 搭建个人博客网站的初衷</h3><p>之前一直在csdn和博客园分享东西,但由于没有版权保护(百度的spider可以随便爬取),更可恨的是文章后期添油加醋太厉害了,完全违背作者的本意;</p><h3 id="2-博客的搭建过程"><a href="#2-博客的搭建过程" class="headerlink" title="2 博客的搭建过程"></a>2 博客的搭建过程</h3><p>按照B/S构建,后端搭建主要是服务器租用和域名注册解析,使之具有发布博客的能力,前端简单了,按照需要显示的模块直接定制功能.</p><h3 id="3-说明"><a href="#3-说明" class="headerlink" title="3 说明"></a>3 说明</h3><p>本人穷学生一枚,租用了腾讯云的服务器和域名解析,相对来讲比价便宜,腾讯云上也直接有限量的对象存储(COS),能用于直接存储图片啥的.</p><p><img src="/assets/blogImg/cloud.png" alt=""></p>]]></content>
     
