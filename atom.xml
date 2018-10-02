@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.littlefeng.com/"/>
-  <updated>2018-10-01T04:41:40.046Z</updated>
+  <updated>2018-10-02T05:09:12.937Z</updated>
   <id>https://www.littlefeng.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小米手环3 NFC版本模拟门卡(占坑编辑)</title>
+    <link href="https://www.littlefeng.com/2018/10/02/xiaomi%20band3/"/>
+    <id>https://www.littlefeng.com/2018/10/02/xiaomi band3/</id>
+    <published>2018-10-02T13:30:00.000Z</published>
+    <updated>2018-10-02T05:09:12.937Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="小米手环3-NFC版本模拟门卡-校园卡模拟测试已通过"><a href="#小米手环3-NFC版本模拟门卡-校园卡模拟测试已通过" class="headerlink" title="小米手环3 NFC版本模拟门卡(校园卡模拟测试已通过)"></a>小米手环3 NFC版本模拟门卡(校园卡模拟测试已通过)</h3><p><img src="/assets/blogImg/mi band3.png" alt=""></p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;小米手环3-NFC版本模拟门卡-校园卡模拟测试已通过&quot;&gt;&lt;a href=&quot;#小米手环3-NFC版本模拟门卡-校园卡模拟测试已通过&quot; class=&quot;headerlink&quot; title=&quot;小米手环3 NFC版本模拟门卡(校园卡模拟测试已通过)&quot;&gt;&lt;/a&gt;小米手环3 NFC版本模拟门卡(校园卡模拟测试已通过)&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/assets/blogImg/mi band3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="nfc" scheme="https://www.littlefeng.com/tags/nfc/"/>
+    
+  </entry>
   
   <entry>
     <title>一张图搞定OSI模型</title>
