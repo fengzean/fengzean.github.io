@@ -224,9 +224,9 @@
 <li>必须是2的幂</li>
 <li>必须是void *的整数倍</li>
 </ol>
-<p>所以从request2size可知，在64位系统，如果申请内存为1～24字节，系统内存消耗32字节，当申请25字节的内存时，系统内存消耗48字节。而对于32位系统，申请内存为1～12字节时，系统内存消耗为16字节，当申请内存为13字节时，系统内存消耗为24字节。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;stdint.h&gt;</span><br><span class="line"></span><br><span class="line">void* aligned_malloc(size_t required_bytes, size_t alignment)</span><br><span class="line">&#123;</span><br><span class="line">    int offset = alignment - 1 + sizeof(void*);</span><br><span class="line">    void* p1 = (void*)malloc(required_bytes + offset);</span><br><span class="line">    if (p1 == NULL)</span><br><span class="line">        return NULL;</span><br><span class="line">    void** p2 = (void**)( ( (size_t)p1 + offset ) &amp; ~(alignment - 1) );</span><br><span class="line">    p2[-1] = p1;</span><br><span class="line">    return p2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void aligned_free(void *p2)</span><br><span class="line">&#123;</span><br><span class="line">    void* p1 = ((void**)p2)[-1];</span><br><span class="line">    free(p1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    void * p[128];</span><br><span class="line">    int i;</span><br><span class="line">    for(i = 0; i &lt; 128; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        p[i] = aligned_malloc(i, 16);</span><br><span class="line">        printf(&quot;%p\n&quot;, p[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    for(i = 0; i &lt; 128; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        aligned_free( p[i] );</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        
+          <a class="article-more-a" href="/2019/05/21/malloc分配内存进行对齐的操作/#more">more >></a>
+        
       
     <!--文章内版权说明开始-->
     
@@ -1011,11 +1011,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Algorithm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Linked list</a>
+                <a href="javascript:void(0)" class="js-tag color1">https</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1027,7 +1023,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">https</a>
+                <a href="javascript:void(0)" class="js-tag color5">Algorithm</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Linked list</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1052,10 +1056,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">特征提取</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
             
             <div class="clearfix"></div>
