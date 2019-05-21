@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.littlefeng.com/"/>
-  <updated>2018-10-15T05:39:54.814Z</updated>
+  <updated>2019-05-21T03:32:13.966Z</updated>
   <id>https://www.littlefeng.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>malloc分配内存进行对齐的操作</title>
+    <link href="https://www.littlefeng.com/2019/05/21/malloc%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E8%BF%9B%E8%A1%8C%E5%AF%B9%E9%BD%90%E7%9A%84%E6%93%8D%E4%BD%9C/"/>
+    <id>https://www.littlefeng.com/2019/05/21/malloc分配内存进行对齐的操作/</id>
+    <published>2019-05-21T03:30:00.000Z</published>
+    <updated>2019-05-21T03:32:13.966Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>昨天调试dsp时，遇到一个malloc内存对齐的问题，当时仔细的想了一下，实在是学习的不到位。有的时候真的应该感谢，像是ccs、Ubuntu Gcc、vs等编译器，它们做了很多工作，malloc直接分配对齐了的内存。如果真的是一个不是很完善的平台，直接分配给你一个没对齐的内存，当我们传输字节指令的时候分高低八位的时候，定义联合体(union)和结构体(struct)这样的固化方式绝对会发一个错误的指令。</p><p><strong>oh 要学的太多了。。。。</strong></p><p>实际上，对齐参数(MALLOC_ALIGNMENT)大小的设定需要满足以下两点：</p><ol><li>必须是2的幂</li><li>必须是void *的整数倍</li></ol><p>所以从request2size可知，在64位系统，如果申请内存为1～24字节，系统内存消耗32字节，当申请25字节的内存时，系统内存消耗48字节。而对于32位系统，申请内存为1～12字节时，系统内存消耗为16字节，当申请内存为13字节时，系统内存消耗为24字节。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;stdint.h&gt;</span><br><span class="line"></span><br><span class="line">void* aligned_malloc(size_t required_bytes, size_t alignment)</span><br><span class="line">&#123;</span><br><span class="line">    int offset = alignment - 1 + sizeof(void*);</span><br><span class="line">    void* p1 = (void*)malloc(required_bytes + offset);</span><br><span class="line">    if (p1 == NULL)</span><br><span class="line">        return NULL;</span><br><span class="line">    void** p2 = (void**)( ( (size_t)p1 + offset ) &amp; ~(alignment - 1) );</span><br><span class="line">    p2[-1] = p1;</span><br><span class="line">    return p2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void aligned_free(void *p2)</span><br><span class="line">&#123;</span><br><span class="line">    void* p1 = ((void**)p2)[-1];</span><br><span class="line">    free(p1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    void * p[128];</span><br><span class="line">    int i;</span><br><span class="line">    for(i = 0; i &lt; 128; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        p[i] = aligned_malloc(i, 16);</span><br><span class="line">        printf(&quot;%p\n&quot;, p[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    for(i = 0; i &lt; 128; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        aligned_free( p[i] );</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="c/c++" scheme="https://www.littlefeng.com/tags/c-c/"/>
+    
+  </entry>
   
   <entry>
     <title>单向链表的逆置</title>
