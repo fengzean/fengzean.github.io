@@ -27,12 +27,12 @@
 <meta name="keywords" content="c&#x2F;c++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言内存四区模型分析">
-<meta property="og:url" content="https://www.littlefeng.com/2018/09/24/C语言内存四区模型分析/index.html">
+<meta property="og:url" content="https://www.littlefeng.com/2019/05/23/C语言内存四区模型分析/index.html">
 <meta property="og:site_name" content="e^iπ+1=0">
 <meta property="og:description" content="先看一段code:1234567891011int main()&amp;#123;    char buf1[10] = &quot;aaaa&quot;;	char buf2[] = &quot;bbbb&quot;;	char *p1 = &quot;1111&quot;;	//动态分配内存	char *p2 = (char *)malloc(10*sizeof(char));	strcpy(p2, &quot;3333&quot;);	return 0;&amp;#125; 内存四区">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://www.littlefeng.com/assets/blogImg/引例.png">
-<meta property="og:updated_time" content="2019-05-23T13:34:44.265Z">
+<meta property="og:updated_time" content="2019-05-23T13:37:23.748Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言内存四区模型分析">
 <meta name="twitter:description" content="先看一段code:1234567891011int main()&amp;#123;    char buf1[10] = &quot;aaaa&quot;;	char buf2[] = &quot;bbbb&quot;;	char *p1 = &quot;1111&quot;;	//动态分配内存	char *p2 = (char *)malloc(10*sizeof(char));	strcpy(p2, &quot;3333&quot;);	return 0;&amp;#125; 内存四区">
@@ -207,8 +207,8 @@
   
 
         
-        <a href="/2018/09/24/C语言内存四区模型分析/" class="archive-article-date">
-  	<time datetime="2018-09-24T10:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-24</time>
+        <a href="/2019/05/23/C语言内存四区模型分析/" class="archive-article-date">
+  	<time datetime="2019-05-23T13:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-23</time>
 </a>
         
       </header>
@@ -267,7 +267,7 @@
   
     <div class="declare">
     <strong>本文链接：</strong>
-    https://www.littlefeng.com/2018/09/24/C语言内存四区模型分析/
+    https://www.littlefeng.com/2019/05/23/C语言内存四区模型分析/
     <br>
     <strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。转载请注明出处！
     <br>
@@ -372,7 +372,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://www.littlefeng.com/2018/09/24/C语言内存四区模型分析/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://www.littlefeng.com/2019/05/23/C语言内存四区模型分析/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -386,18 +386,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/09/24/AI100/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          AI100
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/09/24/nginx-fo-qd/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">nginx是个啥?</div>
+    <a href="/2019/05/21/malloc分配内存进行对齐的操作/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">malloc分配内存进行对齐的操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -436,7 +427,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: 'Mon Sep 24 2018 18:58:00 GMT+0800',
+  id: 'Thu May 23 2019 21:58:00 GMT+0800',
   owner: 'fengzean',
   repo: 'fengzean.github.io',
   oauth: {
@@ -559,15 +550,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">c/c++</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">AI</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">c/c++</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">tcp/ip</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -579,7 +574,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color1">https</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -588,14 +587,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">https</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
              
               <li class="article-tag-list-item">
